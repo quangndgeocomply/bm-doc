@@ -1,0 +1,2398 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/prism.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="./css/prism.js"></script>
+<h1 style="font-size:60px;color:#212529;padding-bottom: 0px;"><center> Table of Contents <center></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="color:#212529">PinPoint</h1>
+<a href = "#PinPoint-overview" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product Overview
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Prologue</h1>
+<a href = "#Prologue-reading-the-docs" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading the Docs
+        </a><br>
+
+        <a href = "#Prologue-release-notes" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Release Notes
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Tutorials</h1>
+<a href = "#Tutorials-setup-beacon" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How to setup the Master Beacon
+        </a><br>
+
+        <a href = "#Tutorials-setup-negative-beacon" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How to setup the Negative Beacon
+        </a><br>
+
+        <a href = "#Tutorials-use-field-testing" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How to use the Field Testing App
+        </a><br>
+
+        <a href = "#Tutorials-use-beacon-emulator" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How to use the Master Beacon Emulator App
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Integration flows</h1>
+<a href = "#Integration flows-overview" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overview
+        </a><br>
+
+        <a href = "#Integration flows-gif" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GeoComply Initiated Flow
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Master Beacons</h1>
+<a href = "#Master Beacons-overview" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overview
+        </a><br>
+
+        <a href = "#Master Beacons-installation" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Installation
+        </a><br>
+
+        <a href = "#Master Beacons-setup" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup & Configure
+        </a><br>
+
+        <a href = "#Master Beacons-network" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Network Configuration
+        </a><br>
+
+        <a href = "#Master Beacons-beacon-coverage" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beacon Coverage
+        </a><br>
+
+        <a href = "#Master Beacons-scanning-beacons" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scanning Beacons
+        </a><br>
+
+        <a href = "#Master Beacons-rssi-threshold" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RSSI Threshold
+        </a><br>
+
+        <a href = "#Master Beacons-negative-beacons" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Negative Beacons
+        </a><br>
+
+        <a href = "#Master Beacons-diagnostics-test" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diagnostics Tests
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Beacon Manager</h1>
+<a href = "#Beacon Manager-overview" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overview
+        </a><br>
+
+        <a href = "#Beacon Manager-zones-beacons" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zones & Beacons
+        </a><br>
+
+        <a href = "#Beacon Manager-accounts" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account Management
+        </a><br>
+
+        <a href = "#Beacon Manager-monitoring" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monitoring
+        </a><br>
+
+        <a href = "#Beacon Manager-alerts" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alerts
+        </a><br>
+
+        <a href = "#Beacon Manager-importing" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importing
+        </a><br>
+
+        <a href = "#Beacon Manager-exporting" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exporting
+        </a><br>
+
+        <a href = "#Beacon Manager-statuspage" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status Page
+        </a><br>
+
+        <a href = "#Beacon Manager-pindropmap" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PinDrop Map
+        </a><br>
+
+        <a href = "#Beacon Manager-create-user" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a User
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Advanced Features</h1>
+<a href = "#Advanced Features-tagged-boundaries" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tagged Boundaries
+        </a><br>
+
+        <a href = "#Advanced Features-env-selection" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Environment Selection
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Back Office</h1>
+<a href = "#Back Office-common-errors" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Common Errors
+        </a><br>
+
+        <br>
+<h1 style="color:#212529">Internal Documents</h1>
+<a href = "#Internal Documents-access-control" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Access Control
+        </a><br>
+
+        <a href = "#Internal Documents-permission-definitions" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission Definitions
+        </a><br>
+
+        <a href = "#Internal Documents-ota-mender-updating" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTA Mender Updating
+        </a><br>
+
+        <a href = "#Internal Documents-global-settings" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global Settings
+        </a><br>
+
+        <a href = "#Internal Documents-bo-settings" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BO Settings
+        </a><br>
+
+        <a href = "#Internal Documents-doc-generator" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documentation Generator
+        </a><br>
+
+        <a href = "#Internal Documents-internal-manual" style="text-decoration: none;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal Manual
+        </a><br>
+
+        <div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>PinPoint<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "PinPoint-overview"></a>
+
+<p><img src="./docs-img/image5.png" alt="image"></p>
+<h1>Product Overview</h1>
+<p><a name="overview"></a></p>
+<h2>Overview</h2>
+<p>PinPoint is GeoComply’s secure on-property mobile solution.</p>
+<p>Combining the power of Beacons with GeoComply’s robust geolocation technology, PinPoint was designed specifically for the gaming industry’s unique requirements and offers the same real-time anti-spoofing and fraud benefits as our mobile and desktop solutions.</p>
+<p>Our current PinPoint deployments include establishments such as Casinos, Sports Bar, Taverns, etc.</p>
+<p>Our technology is designed to meet and exceed all applicable compliance requirements for unique on-property use cases while bridging the gap between existing iGaming and land-based gaming regulations. PinPoint is highly scalable and can be custom-tailored to meet a wide range of regulatory and business use cases, including ad-hoc projects under US state regulatory purview.</p>
+<p>PinPoint comes into play when the casino operators want their customers to wager on their mobile devices from inside the casino building or when a state’s regulation only allows online mobile sports betting from within a licensed sports bar or casino. Since location data such as WiFi and GPS have a wider accuracy range, the PinPoint solution uses Bluetooth to determine the location of the patron.</p>
+<p><a name="features"></a></p>
+<h2>Features</h2>
+<ul>
+<li>Geofence a room, floor or custom zone</li>
+<li>Create custom beacon networks for small-scale geofencing</li>
+<li>Ideal for mobile sports, on-property gaming, bring-your-own-device systems, etc.</li>
+<li>Bundled into the client application using our existing mobile SDK</li>
+<li>Advanced detection and monitoring systems can anticipate movements to alert patrons before leaving permitted areas</li>
+<li>Restrict user access to a room, floor or zone of a gaming property within a few meters of accuracy</li>
+<li>Use of Bluetooth on a mobile device to determine location accuracy</li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Prologue<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Prologue-reading-the-docs"></a>
+
+<h1>Reading The Docs</h1>
+<p><a name="top"></a></p>
+<h2>Reading the Documentation</h2>
+<p>Welcome to the PinPoint documentation website! Here you'll find all your documentation needs for the entire PinPoint product.</p>
+<p>These documents are divided up into sections for easy reading and quick reference. Please see the navigation on the left to quickly jump between sections. Both Master Beacon (the device) and Beacon Manager (online web app) documents are combined on this web page in their respective sections.</p>
+<p><a name="version"></a></p>
+<h2>Version Specific Sections</h2>
+<p>We will occasionally release new features to the PinPoint product to better serve our valued customers. Sections of the documentation that are only applicable to the new versions will be denoted with a blue tag with the version number.</p>
+<p>For example, seeing the following labels:</p>
+<span class = "badge bg-info" style ="font-size:20px;margin:10px;margin-bottom:20px">v2.1+</span>
+<span class = "badge bg-info" style ="font-size:20px;margin:10px;margin-bottom:20px">Added in v2.1</span>
+<p>means that respective section is only for <strong>Master Beacon</strong> software versions <strong>v2.1 and newer.</strong></p>
+<blockquote class="info">
+<p>The version selection dropdown on the top right of all pages can also be used to navigate to an older version of the documentation. The version number is related to the <strong>Master Beacon</strong> version on your device.</p>
+</blockquote>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Prologue-release-notes"></a>
+
+<h1>Release Notes</h1>
+<p><a name="top"></a></p>
+<h2>Release Notes</h2>
+<p>Release notes are currently hosted on the GeoComply release portal. Please contact your GeoComply Account Manager for more information.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Tutorials<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Tutorials-setup-beacon"></a>
+
+<h1>Setup &amp; Configure the Master Beacon</h1>
+<p>Follow these instructions to set up and configure your Master Beacon unit.</p>
+<ol>
+<li>
+<h3>Plug in the Master Beacon.</h3>
+</li>
+</ol>
+<ul>
+<li>The PinPoint Master Beacon requires power and a stable internet connection.</li>
+<li>Our Master Beacons are compatible with Power-Over-Ethernet (PoE) 802.3af to supply both power and an internet connection to the devices.
+<ul>
+<li><strong>WARNING</strong>: Using an incorrect PoE protocol may cause damage to the Master Beacon unit.</li>
+</ul>
+</li>
+<li>Set up the Master Beacons one at a time. If you are setting up multiple units at a property, wait until one has been completely set up before continuing with the next.</li>
+<li>Only one cable per device is required when using PoE. This allows for easier setup at the property, and devices can be remotely restarted from the central network switchboard.</li>
+</ul>
+<ol start="2">
+<li>
+<h3>Connect to &quot;Master Beacon Setup Wi-Fi.&quot;</h3>
+</li>
+</ol>
+<ul>
+<li>After receiving power, the Master Beacon will automatically broadcast a Wi-Fi set-up access point. This will only be available for 10 minutes after the Master Beacon is started.
+<ul>
+<li>If you need longer than 10 minutes, reboot the Master Beacon unit.</li>
+</ul>
+</li>
+<li>Use a smartphone or laptop to connect to the Wi-Fi network, then navigate to the setup web page.
+<ul>
+<li>Wi-Fi Example Access Point: PINPOINT_abc4321 and the password is 'geocomply'.</li>
+</ul>
+</li>
+<li>Once connected, navigate to “<a href="http://masterbeacon.pinpoint/">http://masterbeacon.pinpoint</a>” or “<a href="http://192.168.4.1/">http://192.168.4.1</a>”.</li>
+</ul>
+<ol start="3">
+<li>
+<h3>Login and Configure the Master Beacon Unit.</h3>
+</li>
+</ol>
+<ul>
+<li>Follow the on-screen instructions to configure your Master Beacon.</li>
+<li>You will be prompted to set up the device on your network.</li>
+<li>Choose “DHCP” mode if you want the Master Beacon to automatically receive the network configuration from the router.</li>
+<li>To manually set the network configuration, choose “Static IP” and enter the IP/Subnet Mask/Router.
+<ul>
+<li>The static IP must be in the range of IPs of the router.</li>
+<li>The Subnet Mask must be the proper Subnet Mask of the Router (for example: 255.255.255.0).</li>
+<li>Enter the Router IP into the “Router” field.</li>
+</ul>
+</li>
+<li>Login using the credentials provided by the CS/PinPoint team.</li>
+<li>Set up a new beacon by filling in the following mandatory fields.
+<ul>
+<li>Property/Zone</li>
+<li>Beacon Name (Alphanumeric, spaces, dashes, and underscores can be used)</li>
+<li>Mac Address (should already be filled in)</li>
+<li>Shortcode (enter the case-sensitive shortcode printed on the sticker on the beacon)</li>
+<li>Notes (Optional)</li>
+</ul>
+</li>
+<li>Upon completion, your Master Beacon will be set up and configured.</li>
+<li>You can now find the new Master Beacon in your Beacon Manager dashboard.</li>
+<li>If you receive the following error, confirm the settings with your network admin and make sure the firewall settings are not blocking the beacons.</li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Tutorials-setup-negative-beacon"></a>
+
+<h1>Setup &amp; Configure the Negative Beacon</h1>
+<p>Follow these instructions to set up and configure a Negative Beacon. There are 3 options.</p>
+<ol>
+<li>
+<h3>Set up a single Negative Beacon.</h3>
+</li>
+</ol>
+<ul>
+<li>Go to the <em>Beacons</em> tab and click <em>Create Negative Beacon</em>.</li>
+<li>On the opened form, select <em>Property</em> and <em>Zone</em>.</li>
+<li>Enter the <em>Name</em> for a new Negative Beacon.</li>
+<li>Click <em>Generate UUID</em>. You will need to generate it for the first negative beacon only.</li>
+<li>Enter a <em>Major/Minor</em> pair. It can be any pair of numbers between 1 and 65535, the only requirement is that it should be unique for each Negative Beacon.</li>
+<li>Click <em>Create</em>.</li>
+</ul>
+<ol start="2">
+<li>
+<h3>Bulk generate several Negative Beacons.</h3>
+</li>
+</ol>
+<ul>
+<li>Go to the <em>Beacons</em> tab and click <em>Create Negative Beacon</em>.</li>
+<li>On the opened form, click <em>Bulk Generate</em>.</li>
+<li>On the opened form, select <em>Property</em> and <em>Zone</em>.</li>
+<li>Click <em>Generate UUID</em>. You will need to generate it for the first negative beacon only.</li>
+<li>Enter a <em>Major</em> number. It can be any number between 1 and 65535.</li>
+<li>Enter the number of Negative Beacons you want to generate into <em>Beacons</em> field.</li>
+<li>Click <em>Validate Parameters</em>.</li>
+<li>A new screen will pop up. Verify all the information and click <em>Generate</em>.</li>
+</ul>
+<ol start="3">
+<li>
+<h3>Load a list of Negative Beacons from a .csv file.</h3>
+</li>
+</ol>
+<ul>
+<li>Go to the <em>Beacons</em> tab and click <em>Create Negative Beacon</em>.</li>
+<li>On the opened form, click <em>Import via CSV</em>.</li>
+<li>Select the .csv file you want to load and click <em>Upload</em>.</li>
+<li>If there are any errors, you will see the corresponding message and hints how to fix it.</li>
+<li>If the file is ok to upload, review the information and click <em>Confirm Import</em>.</li>
+</ul>
+<p>When a Negative Beacon is added into Beacon Manager, you can use those parameters (UUID, Major, Minor) to configure a physical Negative Beacon device using its mobile application.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Tutorials-use-field-testing"></a>
+
+<h1>To Use the Field Testing App:</h1>
+<p>The Field Testing App is an app that allows you to submit transactions for testing purposes. This is helpful if you need to perform integration tests or any proof of concept ideas.</p>
+<h3>To test using an Android Device:</h3>
+<ol>
+<li>Download the .APK file onto your device. It will be provided to you by GeoComply.</li>
+<li>Click on the <em>Settings</em> button.</li>
+<li>The Code is an unique identifier supplied by GeoComply so you can load a license key. Enter the provided code and click <em>Load</em>.</li>
+<li>The AKey, Name, Environment, License Key, Encryption Key, and Encryption IV will automatically load with your client Code. You just need to enter the User ID.</li>
+<li>Enable <em>Use looping mode</em> if you want to use the GI flow (if disabled Normal flow will be used), enable <em>Retry on Failed</em> if you want to retry after a failed transactions.</li>
+<li>Click to <em>Save</em>.</li>
+<li>Confirm you are in the vicinity of a master beacon and that it is successfully broadcasting.</li>
+<li>Click to <em>Start</em>.</li>
+<li>You'll begin to receive Pass and Fail notifications. If you receive a Fail, move to another location and try again.</li>
+</ol>
+<p><img src="./docs-img/tutorials/field-test-android-3.png" alt="screenshot">
+<img src="./docs-img/tutorials/field-test-android-1.png" alt="screenshot"></p>
+<h3>To test using an Apple Device:</h3>
+<ol>
+<li>Download the Test Flight app onto your device.</li>
+<li>Click on the <em>Settings</em> button in the upper right-hand corner of your screen.</li>
+<li>The Client Code is an unique identifier supplied by GeoComply so you can load a license key.</li>
+<li>Click on <em>Load License</em>. Enter the key supplied by GeoComply and click <em>Confirm</em>.</li>
+<li>Once the License String has been generated, click the back GeoComply arrow to return to the main screen.</li>
+<li>Ensure the <em>Use Indoor Geolocation</em> settings is activated.</li>
+<li>Confirm you are in the vicinity of the master beacon app and that it is successfully broadcasting.</li>
+<li>Click to <em>Start</em>.</li>
+<li>You'll begin to receive Pass and Fail notifications. If you receive a Fail, move to another location and try again.</li>
+</ol>
+<p><img src="./docs-img/tutorials/field-test-ios-1.jpg" alt="screenshot">
+<img src="./docs-img/tutorials/field-test-ios-2.jpg" alt="screenshot"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Tutorials-use-beacon-emulator"></a>
+
+<h1>To Use the Beacon Emulator App:</h1>
+<p>The Beacon Emulator App is an app that allows you emulator a physical master beacon for testing purposes. This is helpful if you need to perform integration tests or any proof of concept ideas.</p>
+<h3>To test using an Android Device:</h3>
+<ol>
+<li>Download the .APK file onto your device. It will be provided to you by GeoComply.</li>
+<li>Click on the <em>Settings</em> button.</li>
+<li>The Code is an unique identifier supplied by GeoComply so you can load a license key. Enter the provided code and click <em>Load And Save</em>.</li>
+<li>The MAC Address, API Key and Interval will automatically load with your client Code.</li>
+<li>You need one Code for one Operator. If you want to emulate another beacon you just need to change MAC Address and click <em>Save Only</em>.</li>
+<li>Return to the main page and click <em>Start Advertising</em>. Your device is broadcasting the signal if you are seeing <em>Advertising started successfully</em> message.</li>
+</ol>
+<p><img src="./docs-img/tutorials/beacon-emulator-1.png" alt="screenshot">
+<img src="./docs-img/tutorials/beacon-emulator-2.png" alt="screenshot"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Integration flows<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Integration flows-overview"></a>
+
+<h1>Integration flows overview</h1>
+<p>There are 3 types of integration flows:</p>
+<ol>
+<li>
+<h3>State-Wide Flow</h3>
+</li>
+<li>
+<h3>GeoComply Initiation Flow (GIF)</h3>
+</li>
+<li>
+<h3>Hybrid Flow</h3>
+</li>
+</ol>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Integration flows-gif"></a>
+
+<h1>GeoComply Initiated Flow (GIF)</h1>
+<ul>
+<li>
+<p>The GIF flow is the recommended approach for the PinPoint/Indoor integration.</p>
+</li>
+<li>
+<p>Unlike the State-Wide flow, the GIF flow requires the client app to only initiate the first call for geolocation check. The client app does not need to actively handle periodic checks.</p>
+</li>
+<li>
+<p>The application will just need to call the startUpdating() method to start the first geolocation at login. The subsequent periodic checks will be handled by the SDK in a continuous loop until the patron fails a transaction.</p>
+</li>
+<li>
+<p>The client app should explicitly call stopUpdating() if the user session has ended/logged out or when the app goes into background mode (Android only). When stopUpdating() is called, the SDK will not call for new geolocation checks until startUpdating() is called again. It is advised that the operator app calls startUpdating() again if the app returns to the foreground, the user logs in again, or bet placement.</p>
+</li>
+<li>
+<p>Flow diagram is shown on the image below.</p>
+</li>
+</ul>
+<p><img src="./docs-img/integration-flows/gif.png" alt="screenshot-lg"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Master Beacons<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Master Beacons-overview"></a>
+
+<p><img src="./docs-img/image5.png" alt="image"></p>
+<h1>Overview</h1>
+<p><a name="overview"></a></p>
+<h2>Master Beacon Overview</h2>
+<p>At the center of the PinPoint indoor solution are the GeoComply Master Beacons. These custom devices offer a turn-key solution for operators to efficiently geofence an entire property, floor or zone.</p>
+<p>The PinPoint geolocation solution primarily works with GeoComply Initiated Flow (GIF) of mobile SDKs. To know more detail about GIF flow, refer to the latest document “GeoComply iOS/Android SDK, GeoComply Initiated Flow, Interface Definition”.</p>
+<p><a name="hardware"></a></p>
+<h2>Hardware</h2>
+<p><img src="./docs-img/image9.jpg" alt="screenshot-lg">
+<img src="./docs-img/image1.png" alt="screenshot">
+<img src="./docs-img/image13.png" alt="screenshot"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-installation"></a>
+
+<h1>Installation</h1>
+<p><a name="installation"></a></p>
+<h2>Installation</h2>
+<ul>
+<li>Based on the property and supplied floor plans, GeoComply will compile a recommended Master Beacon layout and estimation.</li>
+<li>These custom GeoComply devices are installed in your property, generally on walls or ceilings (more details in the <strong>Beacon Coverage</strong>.</li>
+<li>PinPoint Master Beacons have standard VESA spaced holes (see the image below) to allow for easy mounting.</li>
+</ul>
+<p><img src="./docs-img/image12.png" alt="image"></p>
+<ul>
+<li>Make sure not to overtighten the screws of the Master Beacon units. The exterior fixture is acrylic plastic and may break if overtightened.</li>
+<li>Beacons can be mounted on ceilings or walls.</li>
+<li>The placement of the Master Beacon is critical and should not be physically accessible by patrons.</li>
+<li>The Beacon should be located in a climate-controlled area that is well ventilated, and access to an Ethernet cable is required.</li>
+<li>Once installed, some on-property configuration may be required:
+<ul>
+<li>Account for physical space changes</li>
+<li>Ensure full area coverage</li>
+<li>Adjust thresholds for entrances/exits</li>
+<li>Incorporate negative beacons (Please see Section 4: Negative Beacons)</li>
+</ul>
+</li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-setup"></a>
+
+<h1>Setup &amp; Configure</h1>
+<p>Follow these instructions to set up and configure your Master Beacon unit.</p>
+<p><a name="plugin"></a></p>
+<h2>1. Plug-in Master Beacon</h2>
+<ul>
+<li>The PinPoint Master Beacon requires power and a stable internet connection.</li>
+<li>Our Master Beacons are compatible with Power-Over-Ethernet (PoE) 802.3af to supply power and an internet connection to the devices.</li>
+</ul>
+<blockquote class="danger">
+<p>Using an incorrect PoE protocol may cause damage to the Master Beacon unit.</p>
+</blockquote>
+<ul>
+<li>Set up the Master Beacons one at a time. If you are setting up multiple units at a property, wait until one has been completely set up before continuing with the next.</li>
+<li>Only one cable per device is required when using PoE. This allows for easier setup at the property, and devices can be remotely restarted from the central network switchboard.</li>
+</ul>
+<p><a name="connect"></a></p>
+<h2>2. Connect to &quot;Master Beacon Setup Wi-Fi&quot;</h2>
+<ul>
+<li>After receiving power, the Master Beacon will automatically broadcast a set-up Wi-Fi access point. This will only be available for 10 minutes after the Master Beacon is started.
+<ul>
+<li>If you need longer than 10 minutes, reboot the Master Beacon unit.</li>
+</ul>
+</li>
+</ul>
+<p><img src="./docs-img/mb/landing.png" alt="screenshot-lg"></p>
+<ul>
+<li>Use a smartphone or laptop to connect to this Wi-Fi network, then navigate to the setup web page.</li>
+<li>Wi-Fi Example Access Point: PINPOINT_abc4321 and the password is 'geocomply'.</li>
+<li>Once connected, navigate to “http://masterbeacon.pinpoint” or “http://192.168.4.1”.</li>
+</ul>
+<p><a name="login"></a></p>
+<h2>3. Login and Configure</h2>
+<ul>
+<li>Follow the on-screen instructions to configure your Master Beacon.</li>
+<li>You will be asked to set up the device on your network:</li>
+</ul>
+<p><img src="./docs-img/mb/network_dhcp.png" alt="screenshot">
+<img src="./docs-img/mb/network_staticip.png" alt="screenshot"></p>
+<ul>
+<li>Choose “DHCP” mode if you want the Master Beacon to automatically receive the network configuration from the router.</li>
+<li>Otherwise, choose “Static IP” and enter the IP/Subnet Mask/Router. The static IP must be in the range of IPs of the router. The Subnet Mask must be the proper Subnet Mask of Router (for example: 255.255.255.0). And finally, the Router IP is entered into the “Router” field.</li>
+</ul>
+<p><img src="./docs-img/mb/network_success.png" alt="screenshot-lg"></p>
+<ul>
+<li>Login using the credentials provided by the CS/PinPoint team:</li>
+</ul>
+<p><img src="./docs-img/mb/login.png" alt="screenshot-lg"></p>
+<ul>
+<li>Set up a new beacon by filling in the following mandatory fields:
+<ul>
+<li>Property/Zone</li>
+<li>Beacon Name (Alphanumeric, spaces, dashes, and underscores can be used)</li>
+<li>Mac Address (should already be filled in)</li>
+<li>Shortcode (enter the case-sensitive shortcode printed on the sticker on the beacon)</li>
+<li>Notes (Optional)</li>
+</ul>
+</li>
+</ul>
+<p><img src="./docs-img/mb/setup.png" alt="screenshot"></p>
+<ul>
+<li>Upon completion, your Master Beacon will be set up and configured.</li>
+<li>You can now find the new Master Beacon in your Beacon Manager dashboard.</li>
+</ul>
+<blockquote>
+<p><strong class="success">The master beacon will automatically reboot and will be ready to use.</strong></p>
+</blockquote>
+<hr>
+If you receive the following error, confirm settings with your network admin and make sure the firewall settings are not blocking the beacons:
+<p><img src="./docs-img/mb/no_internet.png" alt="screenshot-lg"></p>
+<p><a name="ledlight"></a></p>
+<h2>4. LED light status meaning</h2>
+<ul>
+<li>On the Master Beacon, there is a red and green LED light. The mapping between LED and current system state is provided in the table below:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>RED light</th>
+<th>GREEN light</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OFF</td>
+<td>OFF</td>
+<td>No power supplied</td>
+</tr>
+<tr>
+<td>FLASHING</td>
+<td>Unspecified</td>
+<td>The power supply voltage is under 4.3V</td>
+</tr>
+<tr>
+<td>ON</td>
+<td>OFF</td>
+<td>Have sufficient power supply but the Master Beacon is not running</td>
+</tr>
+<tr>
+<td>ON</td>
+<td>FLASHING</td>
+<td>Master Beacon is booting up</td>
+</tr>
+<tr>
+<td>FLASHING</td>
+<td>ON</td>
+<td>Master Beacon is in setup mode</td>
+</tr>
+<tr>
+<td>OFF</td>
+<td>ON</td>
+<td>Master Beacon is in regular operator mode</td>
+</tr>
+</tbody>
+</table>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-network"></a>
+
+<h1>Network Configuration</h1>
+<p><a name="network"></a></p>
+<h2>Network Configuration</h2>
+<p>The PinPoint Master Beacon connects to GeoComply servers to allow for indoor geolocation. To ensure the Master Beacons work properly, confirm the following rules and policies are permitted on your firewall:</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Purpose</th>
+<th>Destination</th>
+<th>Content</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GC Engine Service</td>
+<td>Connect to the GeoComply Engine service to retrieve the new settings</td>
+<td><code>*.geocomply.com</code>:443 <strong>PROD NJ Engine</strong>: 18.214.7.207, 52.44.10.150, 72.44.48.9, 18.211.62.154; <strong>PROD US2 Engine</strong>: 52.207.111.112, 52.200.151.67, 18.234.14.24, 3.212.54.81; <strong>PROD US3 Engine</strong>: 52.206.196.78, 3.215.162.148, 52.2.98.94, 3.214.187.10; <strong>PROD US4 Engine</strong>: 3.223.16.224, 52.22.236.59, 23.22.174.156, 54.235.110.208; <strong>PROD US5 Engine</strong>: 52.45.174.32, 3.224.10.223, 54.91.19.124, 3.231.114.21; <strong>PROD US6 Engine</strong>: 3.210.29.180, 52.4.244.47, 54.210.224.174, 3.216.236.47; <strong>PROD US7 Engine</strong>: 54.145.81.158, 18.215.18.185, 100.26.129.131, 3.231.91.30; <strong>PROD US8 Engine</strong>: 3.211.102.11, 35.172.156.218, 52.55.173.33, 34.226.12.242; <strong>PROD US9 Engine</strong>: 54.167.215.150, 34.200.62.25, 54.157.148.191, 54.173.166.237; <strong>PROD US10 Engine</strong>: 52.4.238.15, 52.3.202.162, 52.4.129.19, 52.4.179.99</td>
+<td>JSON strings with small payload</td>
+<td>Outgoing</td>
+</tr>
+<tr>
+<td>GC Management Service</td>
+<td>Allows GeoComply to get access to the device, should it be required for advanced diagnostics, customer troubleshooting, or other critical updates. It is not used in normal Master Beacon operation.</td>
+<td><code>pibeacon-ssh.geocomply.net</code>:22,443</td>
+<td>JSON strings for communication (port 443), SSH payload for SSH connection (and SSH tunnelling)</td>
+<td>Outgoing</td>
+</tr>
+<tr>
+<td>Beacon Manager Service</td>
+<td>Collect Master Beacon data and control the Master Beacons remotely.</td>
+<td><code>pinpoint.geocomply.com</code>:443</td>
+<td>JSON strings</td>
+<td>Outgoing</td>
+</tr>
+<tr>
+<td>GC Monitoring Service</td>
+<td>Monitor Master Beacon hardware.</td>
+<td><code>grafana.geocomply.com</code>:8086,<code>grafana.geocomply.com</code>:2003 (TCP)</td>
+<td></td>
+<td>Outgoing</td>
+</tr>
+<tr>
+<td>Pub Nub</td>
+<td>To keep the connection with PubNub service.</td>
+<td><code>*.pubnub.com</code>,<code>*.pndsn.com</code>,<code>*.pubnub.net</code>,<code>*.pubnub.io</code>. Port 443 is used for SSL, port 80 is used for fallback only, if SSL is not working. <strong>Inbound</strong>: 54.175.191.192/26 US, 52.9.63.128/26 US, 34.223.51.128/27 US, 52.29.255.168/29 EU, 35.157.63.192/26 EU, 18.179.18.128/25 Asia, 13.232.67.192/27 India. <strong>Outbound</strong>: 54.236.3.168/29 US, 54.175.191.192/26 US, 54.241.191.232/29 US, 52.9.63.128/26 US, 34.223.51.128/27 US, 54.93.254.232/29 EU, 35.157.63.192/26 EU, 54.250.252.48/29 Asia, 54.249.82.168/31 Asia, 18.179.18.128/25 Asia, 13.232.67.192/27 India</td>
+<td></td>
+<td>Outgoing</td>
+</tr>
+<tr>
+<td>Elastic Search Log</td>
+<td>Collect the system log of  the Master Beacon for debug and quality improvement.</td>
+<td><code>server-log.geocomply.net</code>:5044 (TCP)</td>
+<td></td>
+<td>Outgoing</td>
+</tr>
+<tr>
+<td>Over-The-Air Update</td>
+<td>Auto update services on the Master Beacon.</td>
+<td><code>ota-mender.geocomply.com</code>:9000,443 (TCP)</td>
+<td>Binary</td>
+<td>Both Incoming and Outgoing</td>
+</tr>
+<tr>
+<td>Network Diagnostics</td>
+<td>To perform diagnostics of the connection to local network</td>
+<td><code>google.com</code>:80,443 (TCP)</td>
+<td></td>
+<td>Outgoing</td>
+</tr>
+</tbody>
+</table>
+<p><a name="diagnostics"></a></p>
+<h2>Diagnostics Test</h2>
+<span class = "badge bg-info" style ="font-size:20px;margin:10px;margin-bottom:20px">v2.1+</span>
+<p>To confirm that firewall connections are correct, you can run a Diagnostics Test on the Master Beacon unit. See the <strong>Diagnostics Tests</strong> section for more information.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-beacon-coverage"></a>
+
+<h1>Beacon Coverage</h1>
+<p><a name="top"></a></p>
+<h2>Beacon Coverage</h2>
+<p>Based on your property and supplied floor plans, GeoComply will compile a recommended Master Beacon coverage estimation.</p>
+<p>Depending on what regulatory policies are in place, you may need to adjust your beacon coverage on-property to ensure bets can only be placed within permitted gaming areas. Some on-property configurations may be required to:</p>
+<p>✔ Account for physical space changes.<br>
+✔ Ensure full area coverage.<br>
+✔ Adjust thresholds for entrances/exits.<br>
+✔ Incorporate negative beacons.</p>
+<p><img src="./docs-img/mb/model_floorplan.png" alt="screenshot-lg"></p>
+<p>Adjusting your coverage can primarily be done in two ways: Adjusting Master Beacon RSSI threshold values or adding Negative Beacons.</p>
+<p><a name="rssi"></a></p>
+<h3>RSSI Threshold</h3>
+<p>See <strong>RSSI Threshold</strong> for more information.</p>
+<p><a name="negative"></a></p>
+<h3>Negative Beacons</h3>
+<p>See <strong>Negative Beacons</strong> for more information.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-scanning-beacons"></a>
+
+<h1>Scanning Beacons</h1>
+<p><a name="scanning"></a></p>
+<h2>Scanning Beacons</h2>
+<p>The third-party beacon scanners help measure the signal strength emitted by the Master Beacons and Negative Beacons. The scanners can be used to determine the RSSI range, which can help stop the bluetooth signal from bleeding outside of the walls or spaces that might not be a part of the legal wagering space. (See <strong>RSSI Threshold</strong></p>
+<blockquote class="white.fa-info-circle">
+<p>This page outlines third-party applications that can be used to scan for any type of iBeacon compatible beacon. These third-party applications do not integrate with GeoComply systems and do not provide transaction pass/fail details.</p>
+</blockquote>
+<p><a name="apps"></a></p>
+<h2>Beacon Scanning Apps</h2>
+<ul>
+<li>There are several free third-party Beacon Scanner Apps available in the App Store and Play Store.</li>
+</ul>
+<blockquote class="white.fa-info-circle">
+<p>For simplicity, an Android device is recommended; however, Apple devices can be used with a few additional steps.</p>
+</blockquote>
+<ul>
+<li>
+<p>The Beacon can be identified by its UUID.</p>
+</li>
+<li>
+<p>The apps can scan the beacons and note the RSSI Value for the following areas (and look for any bleeding): middle of the room, by the door, and outside the room. This will help in determining where the Negative iBeacon would fit and if the Master Beacon’s RSSI value needs adjustment.</p>
+</li>
+<li>
+<p>On Android, these are the two recommended apps:</p>
+<ul>
+<li>The Beacon Scanner app by Nicolas Bridoux: https://play.google.com/store/apps/details?id=com.bridou_n.beaconscanner&amp;hl=en_CA</li>
+<li>iBeacon &amp; Eddystone Scanner by Flurp laboratories: https://play.google.com/store/apps/details?id=de.flurp.beaconscanner.app&amp;hl=en_CA</li>
+</ul>
+</li>
+<li>
+<p>Android app ‘Beacon Scanner’ example below:</p>
+</li>
+</ul>
+<p><img src="./docs-img/image11.png" alt="screenshot">
+<img src="./docs-img/image14.png" alt="screenshot"></p>
+<ul>
+<li>On an iOS device, these are the two recommended apps:
+<ul>
+<li>The RadBeacon app by Radius Networks: https://apps.apple.com/us/app/radbeacon/id789301891</li>
+<li>The Locate Beacon app by Radius Networks: https://apps.apple.com/ca/app/locate-beacon/id738709014</li>
+</ul>
+</li>
+<li>If you use either the iOS app ‘RadBeacon’ or the ‘Locate Beacon’ app, iOS users will need to add the beacon UUID before it can be scanned.</li>
+</ul>
+<p><img src="./docs-img/image10.png" alt="screenshot"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-rssi-threshold"></a>
+
+<h1>RSSI Threshold</h1>
+<p><a name="rssi"></a></p>
+<h2>RSSI Threshold</h2>
+<ul>
+<li>The Received Signal Strength Indicator (RSSI) represents the signal strength received by the user’s device from the Master Beacon and has no absolute value unless specified.
+<ul>
+<li>If you stand close to the beacon, you will get the strongest signal (for example, <code>-20</code>), and as you walk away, the signal strength weakens (for example, <code>-100</code>).</li>
+</ul>
+</li>
+<li>The maximum RSSI value can be set to contain the signal as required using the Beacon Manager (see Section 5 Beacon Manager).</li>
+<li>The recommended RSSI value is between -40 and -100. A value of -40 would be used in a location fairly close to the Master Beacon, while -100 would be used in a far away location from the Master Beacon (before going out of range). These values might vary, depending on the environment.</li>
+<li>Signal Interference and Signal Absorption may be factors resulting in a weaker signal strength in different environments.</li>
+</ul>
+<p><img src="./docs-img/mb/model_rssi.png" alt="screenshot-lg"></p>
+<p><a name="updating"></a></p>
+<h2>Updating RSSI</h2>
+<p>Updating the RSSI threshold value for a beacon is done in the Beacon Manager. See <strong>Beacons</strong> for more information.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-negative-beacons"></a>
+
+<h1>Negative Beacons</h1>
+<p><a name="negative"></a></p>
+<h2>Negative Beacons</h2>
+<p>In contrast to the Master Beacon, Negative Beacons are off-the-shelf third-party beacons that broadcast “negative” signals. These signals establish a range that prohibits people from wagering in a disallowed area.</p>
+<p>Disallowed areas can include the entrance door, staircases, parking lots, or specific premises within a building that are either not regulated for wagering or that fall outside of the business' boundaries. Disallowed areas are also useful in situations where the Master Beacon signals unavoidably bleed outside of the walls into a non-regulated premise. This situation can be remedied by using a Negative Beacon to broadcast negative signals in those 'bleeding' spots.</p>
+<p>The Negative Beacon's signal has a higher priority than the Master Beacon’s positive signal. This means that should the range of both beacons overlap, the Negative Beacon’s signal takes precedence over the Master Beacon and prevents wagering in disallowed areas. The signal ranges for both the Master and Negative Beacon need adjustment upon installment.</p>
+<p><a name="hardware"></a></p>
+<h2>Hardware</h2>
+<p>The picture on the left is a USB-powered RadBeacon and on the right is a weatherproof RadBeacon E4. These are the recommended models; however, other models/vendors can be used. More information on where to buy the negative beacons can
+be found in the ‘Sourcing’ section below.</p>
+<p><img src="./docs-img/image27.png" alt="screenshot">
+<img src="./docs-img/image7.png" alt="screenshot"></p>
+<p><a name="software"></a></p>
+<h2>Simulation App</h2>
+<p>If you want to test a negative beacon and you do not have a physical device, you can use a simulation app. You can use any iBeacon simulation app available on the market. For example, you can use Beacon Simulator.</p>
+<p><img src="./docs-img/nb-sim1.png" alt="screenshot">
+<img src="./docs-img/nb-sim2.png" alt="screenshot"></p>
+<p><a name="installation"></a></p>
+<h2>Negative Beacon Installation</h2>
+<p>Negative Beacons are a perfect way to ensure high accuracy inclusion/exclusion zones at a property. The following image is an example of where to place Negative Beacons to block patrons from playing when exiting or entering an establishment:</p>
+<p><img src="./docs-img/mb/model_negative.png" alt="screenshot-lg"></p>
+<p>Installing Negative Beacons by the doors or any attached establishments where wagering is not permitted is recommended to avoid the Master Beacon signal from bleeding outside of establishment walls or entrance/exit doors. This can include convenience or liquor stores that are part of the same building but illegal to wager.</p>
+<p>To make sure the negative signal doesn’t overlap into permitted areas, start by configuring the Negative Beacons to a smaller signal strength and then incrementally increasing it until the correct setting is attained.</p>
+<p><a name="sourcing"></a></p>
+<h2>Sourcing</h2>
+<p>Our recommended vendor to purchase the negative beacons from is Radius Networks: https://store.radiusnetworks.com/collections/all. The operator has the option to buy the hardware themselves based on GeoComply’s requirements, or GeoComply can purchase the hardware and bill the operator accordingly.</p>
+<h3>USB-Powered RadBeacon:</h3>
+<ul>
+<li>Product Link: https://store.radiusnetworks.com/collections/all/products/radbeacon-usb-2</li>
+<li>The beacon is powered via a standard USB port; hence, no battery is needed. Radbeacon also sells their own charger for USB Radbeacons: https://store.radiusnetworks.com/collections/frontpage/products/radbeacon-usb-power-supply</li>
+<li>The USB-powered Radbeacon is highly recommended by GeoComply since there is no risk of draining batteries.</li>
+<li>The only drawback is that a power supply is needed, and if the ibeacon is placed outdoors, it needs weatherproofing.</li>
+<li>If the app asks for a PIN, default one is &quot;00000000&quot;.</li>
+</ul>
+<h3>Weather-proof RadBeacon E4:</h3>
+<ul>
+<li>Website Link: https://store.radiusnetworks.com/collections/all/products/radbeacon-x4</li>
+<li>The beacon is powered via 4 AA batteries and can last for around 1 year.</li>
+<li>The beacon is weatherproof and can be placed outdoors.</li>
+<li>Mounting attachments are included with the device.</li>
+<li>It is recommended in places where the USB-powered Radbeacon cannot be utilized, such as outdoors or in a location without an available power supply.</li>
+</ul>
+<p>Should the operator decide to use a different model/brand instead of the ones recommended above, GeoComply needs to be notified in advance to test and confirm compatibility. The Negative Beacon needs to satisfy the following criteria to ensure compatibility:</p>
+<ul>
+<li>Must be compatible with the iBeacon protocol developed by Apple.</li>
+<li>Ability to change the identifiers during setup (UUID, major, minor)</li>
+<li>Change the broadcast signal strength during setup. This allows tuning down the signal strength to an effective range of a few meters.</li>
+<li>Change the advertising rate during setup. The beacon should be able to advertise as fast as 5 times per second ( 200ms advertising interval).</li>
+</ul>
+<p>The operator will manage the Negative Beacons. Several third-party beacon scanners are available to manually manage the Negative Beacons by walking around the property and checking whether the installed beacons are broadcasting the necessary Bluetooth signal. The battery-powered beacons should be put on a battery replacement maintenance schedule by the operator.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Master Beacons-diagnostics-test"></a>
+
+<h1>Diagnostics Test</h1>
+<span class = "badge bg-info" style ="font-size:20px;margin:10px;margin-bottom:20px">Added in v2.1</span>
+<p><a name="intro"></a></p>
+<h2>Introduction</h2>
+<p>We recognize that every property's deployment may have different network configurations and challenges. We have introduced the ability to run tests on the Master Beacon to check network connectivity to our GeoComply servers.</p>
+<p>At anytime during the Master Beacon setup process, you can click the &quot;Diagnostic Test&quot; button in the footer to launch this tool. Running directly within the browser, the tool executes a number of network connection check tests to display overall connectivity details to the user. If a firewall on your network is blocking the Master Beacon's connections, this tool easily allows you to identify such device.</p>
+<p><img src="./docs-img/mb/diagnostic_tests_completed.png" alt="screenshot-lg"></p>
+<p><a name="auto-log"></a></p>
+<h2>Automatic Log Uploading</h2>
+<p>If an internet connection is able to be established at the time the diagnostic test is ran, the results will automatically be sent to GeoComply servers.</p>
+<p><img src="./docs-img/mb/diagnostic_tests_warningdialog.png" alt="screenshot-lg"></p>
+<p>If the beacon has already been configured, the results will be tied to your configured Beacon in the Beacon Manager web application.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Beacon Manager<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Beacon Manager-overview"></a>
+
+<h1>Overview</h1>
+<p><a name="overview"></a></p>
+<h2>Beacon Manager Overview</h2>
+<p>Included with the PinPoint indoor geolocation solution is the Beacon Manager web application, which allows you to easily monitor the Master Beacon's ongoing health, to receive critical uptime alerts, and to list and compare property zones.</p>
+<p><a name="features"></a></p>
+<h2>Features</h2>
+<ul>
+<li>Easily add and manage PinPoint Master Beacons</li>
+<li>Monitor Master Beacon ongoing health</li>
+<li>Receive critical Master Beacon uptime alerts</li>
+<li>List and compare predefined beacon zones.</li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-zones-beacons"></a>
+
+<h1>Zones &amp; Beacons</h1>
+<p><a name="structure"></a></p>
+<h2>Structure</h2>
+<p>The image below shows the structure of Beacon Manager objects.
+<img src="./docs-img/image3.png" alt="Image"></p>
+<p><a name="properties"></a></p>
+<h2>Properties</h2>
+<p>At present, properties can only be created by GeoComply and any requests should be sent to the GeoComply team.</p>
+<p><a name="zones"></a></p>
+<h2>Zones</h2>
+<ul>
+<li>Zones can be an area, floor, or a physical section in the establishment.</li>
+<li>Zones can be created by logging into the Beacon Manager and clicking on ‘Zones’ at the top right panel:
+<ul>
+<li>Under the ‘Property Selection’ Section, make sure to select the Property this zone belongs to.</li>
+<li>Under ‘Zone Details’, the ‘Name’ has to be distinguishable and will be passed by GeoComply in the XML response to the Operator as ‘Tagged Boundaries.’ The tagged boundaries feature allows for additional operator logic based on the user's proximity to a beacon zone. For more details, see the ‘B. Tagged Boundaries’ section.</li>
+<li>To visualize beacon placement in the establishment/zone, a floor plan can be uploaded.
+<img src="./docs-img/image20.png" alt="Image"></li>
+</ul>
+</li>
+<li>Floor Plans are used for visualization purposes and can either be added when creating a new zone or by editing an existing zone.</li>
+<li>The following images show an existing test zone with a floor plan. To add a beacon to the floor plan, click on the beacon name (for example ‘dd’ in the first image at the bottom left), and a new webpage will load. You can then place the beacon on the floor plan by double clicking on the map (second image):
+<img src="./docs-img/image4.png" alt="Image">
+<img src="./docs-img/image6.png" alt="Image"></li>
+</ul>
+<p><a name="beacons"></a></p>
+<h2>Beacons</h2>
+<p>Master Beacons should be added using the physical beacon UX instructions located in the ‘Master Beacon Installation and Setup’ section of this document. The ‘Create’ beacon functionality is only for older beacon models. Beacons can be monitored directly from the dashboard and are also visible under the Properties, Zones, and Beacons tabs. The RSSI value is the only editable section under every individual beacon.</p>
+<p>The RSSI value should be updated using the recommendations under the ‘RSSI Threshold’ section in Beacon Coverage, and a reason must be entered for logging purposes.</p>
+<p>The ‘Edit’ option at the top right corner located under a beacon lets you edit the RSSI value of the beacon as shown below. Empty value means the beacon is broadcasting the RSSI value at its highest.</p>
+<p><img src="./docs-img/image16.png" alt="Image"></p>
+<p>The Master Beacon can also be deleted (with the correct permissions) on the Beacon Manager by clicking on the ‘Delete Beacon’ option on the top right corner under the individual beacon.</p>
+<p><a name="negative-beacons"></a></p>
+<h2>Negative Beacons</h2>
+<p>The list of existing Negative Beacons can be found in the <em>Beacons</em> menu, <em>Negative Beacons</em> tab.</p>
+<p style="text-align:center;">
+<img src="./docs-img/bm/negative-beacon.png" width="600" align="middle">
+</p>
+<h3>Creating negative beacons</h3>
+<ul>
+<li>To add a new negative beacon you need to click <em>Create Negative Beacon</em>.</li>
+<li>When a new page is opened please select <em>Property</em> and <em>Zone</em>.</li>
+</ul>
+<p style="text-align:center;">
+<img src="./docs-img/bm/nb-property-zone.png" width="600" align="middle">
+</p>
+<ul>
+<li>Fill in <em>Name</em>.</li>
+<li>If it is the first negative beacon for this property you need to generate a new UUID. Please click <em>Generate</em> to do that. If any negative beacon has been already created for this property UUID will be pre-populated.</li>
+<li>Enter values for <em>Major / Minor</em></li>
+</ul>
+<p style="text-align:center;">
+<img src="./docs-img/bm/nb-details.png" width="600" align="middle">
+</p>
+<h3>Importing from a file</h3>
+<ul>
+<li>To import negative beacons from a file you need to click <em>Create Negative Beacon</em> and then <em>Import via CSV</em>.</li>
+</ul>
+<p style="text-align:center;">
+<img src="./docs-img/bm/nb-import.png" width="600" align="middle">
+</p>
+<h3>Bulk generating negative beacons</h3>
+<ul>
+<li>To bulk generate negative beacons you need to click <em>Create Negative Beacon</em> and then <em>Bulk Generate</em>.</li>
+<li>It is very similar to generating a single beacon. The only difference you can't choose <em>Minor</em> and need to enter a number of beacons into <em>Beacons</em> field.</li>
+</ul>
+<p style="text-align:center;">
+<img src="./docs-img/bm/nb-bulk.png" width="600" align="middle">
+</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-accounts"></a>
+
+<h1>Account Management</h1>
+<p><a name="password"></a></p>
+<h2>Password Change</h2>
+<p>To reset your password, you can either click the ‘Account Settings’ link at the footer of the webpage, or open the Beacon Manager login page and click on the ‘Forgot Your Password?’ link below the login button. See below:</p>
+<ul>
+<li>Beacon Manager Login Page
+<img src="./docs-img/image28.png" alt="screenshot-lg"></li>
+<li>Account Settings Page
+<img src="./docs-img/image29.png" alt="screenshot-lg"></li>
+</ul>
+<p><a name="2fa"></a></p>
+<h2>Two-Factor Authentication</h2>
+<p>To enable Two-Factor Authentication, click on the blue link (see below), and complete the following process:</p>
+<ul>
+<li>Two-Factor Status<br/>
+<img src="./docs-img/image30.png" alt="screenshot-lg"></li>
+<li>Steps to enable 2FA<br/>
+<img src="./docs-img/image31.png" alt="screenshot-lg"></li>
+<li>Passcode on Google Authenticator App<br/>
+<img src="./docs-img/image32.png" alt="screenshot"></li>
+<li>Passcode on Authy App<br/>
+<img src="./docs-img/image33.png" alt="screenshot"></li>
+<li>Passcode on Microsoft Authenticator App<br/>
+<img src="./docs-img/image34.png" alt="screenshot"></li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-monitoring"></a>
+
+<h1>Monitoring</h1>
+<p><a name="monitoring"></a></p>
+<h2>Monitoring</h2>
+<p>The Beacon Manager application includes a suite of features to help monitor the PinPoint beacon fleet deployment in your property. You can view the beacon &amp; zone health over a timeframe to help quickly identify any recurring infrastructure-related outages as well as receive uptime alerts per beacon.</p>
+<ul>
+<li>Monitoring can be performed property-wide, by zone, or by the individual beacon.</li>
+</ul>
+<p><img src="./docs-img/image26.png" alt="Image">
+<img src="./docs-img/image17.png" alt="Image"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-alerts"></a>
+
+<h1>Alerts</h1>
+<p><a name="alerts"></a></p>
+<h2>Alerts</h2>
+<p>The Beacon Manager application includes a suite of features to help monitor your PinPoint beacon fleet deployment in your property.</p>
+<ul>
+<li>Creating alerts is easy with the beacon, zone, or property level.</li>
+<li>The alerts allow for multiple email addresses, multiple Slack channel notifications, a webhook type, and a PagerDuty (coming soon).</li>
+<li>The alerts permissions can be assigned at a per-property level.</li>
+<li>The alerts will be sent from email address: no-reply@geoguard.com.</li>
+</ul>
+<p><img src="./docs-img/alerts-listing-page.png" alt="screenshot-lg"></p>
+<p>There are four alert types:</p>
+<ul>
+<li><strong>Beacon Offline</strong>: This alert will trigger when a beacon is no longer communicating with our servers. It can be assigned to individual Beacons or entire Zones and Properties.</li>
+</ul>
+<blockquote class="info">
+<p>This alert will be created automatically when a new beacon is created. It will be created on a property level. However, if Beacon Offline alert already exists on the property level it won't be created. This feature helps to create such alerts automatically so you are always alerted if any beacon goes offline.</p>
+</blockquote>
+<p>It is possible to configure a certain threshold of Master Beacons that must be offline in order for this alert to be triggered. A value of 0% means this alert will be triggered if a single beacon goes offline within this Property. A value of 100% means this alert will only be triggered if all Master Beacons go offline within this Property.</p>
+<p><img src="./docs-img/alerts-beacon-offline-threshold.png" alt="screenshot-lg"></p>
+<ul>
+<li><strong>Beacon Created</strong>: This alert will trigger when a new Beacon has been created within a Zone or Property.</li>
+<li><strong>Zone Created</strong>: This alert will trigger when a new Zone has been created in a Property.</li>
+<li><strong>Beacon RSSI Update</strong>: This alert will trigger when a Beacon's RSSI threshold value has been modified.</li>
+</ul>
+<p><a name="Notification_Channels"></a></p>
+<h3>Notification Channels</h3>
+<p>When alerts are created, you can choose from several notification methods. Some notification channels that can be added are:</p>
+<ul>
+<li><strong>Dashboard Notification</strong>: Displayed within your dashboard. Always enabled.</li>
+<li><strong>Email Notification</strong>: An email notification can be sent to a maximum of 5 email addresses.</li>
+<li><strong>Slack Channel Notification</strong>: A Slack channel message can be sent via Slack Webhook to a maximum of 3 channels.</li>
+<li><strong>Webhook Notification</strong>: A webhook url will be pinged with alert details.</li>
+<li><strong>PagerDuty Notification</strong>: Coming soon.</li>
+</ul>
+<p><a name="Creating_Alert"></a></p>
+<h3>Creating an Alert</h3>
+<p>Alerts can easily be created within your Beacon Manager alerts page. There are no limits to the number of alerts that you can create.</p>
+<p><img src="./docs-img/alerts-create-page.png" alt="screenshot-lg"></p>
+<p><a name="Webhook_Notification"></a></p>
+<h3>Webhook Notification</h3>
+<p>In order to create a new Webhook Notification you just need to provide a Webhook URL.</p>
+<p>For example, if you want to change RSSI value and you provide the Webhook URL below:</p>
+<p><code>https://webhook.site/26b6459a-518c-4899-84c2-cbfd4753a28c</code></p>
+<p>You will get the following JSON payload on your end:</p>
+<pre class="language-javascript">
+<span class="token punctuation">{</span><br/>
+    &nbsp;&nbsp;<span class="token string">"beacon_manager_env"</span>: <span class="token string">"stg"</span>,<br/>
+    &nbsp;&nbsp;<span class="token string">"beacon_manager_version"</span>: <span class="token string">"v1.7.1"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"url"</span>: <span class="token string">"https://pinpoint-stg.geocomply.net/beacons/233"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"alert_id"</span>: <span class="token string">38</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"alert_severity"</span>: <span class="token string">"NORMAL"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"alert_type"</span>: <span class="token string">"Beacon RSSI Update"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"alert_timestamp"</span>: <span class="token string">"2021-02-03T02:54:26.260201Z"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"alert_title"</span>: <span class="token string">"Beacon RSSI Update!"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"alert_payload"</span>: <span class="token string">"{\"rssi\":{\"old\":\"-80\",\"new\":\"-81\"}}"</span>,<br>
+    &nbsp;&nbsp;<span class="token string">"beacon_id"</span>: <span class="token string">233</span><br>
+<span class="token punctuation">}</span>
+</pre>
+<p>You can find the list of originating IP addresses below:</p>
+<p>=== PROD LB IPs ===<br>
+100.24.239.209<br>
+3.210.100.214<br>
+=== PROD APP IPs ===<br>
+3.231.24.211<br>
+35.175.238.194<br>
+=== STG LB IPs ===<br>
+34.206.243.60<br>
+35.174.96.162<br>
+=== STG APP IPs ===<br>
+34.228.140.120<br>
+3.85.106.90</p>
+<p><a name="PagerDuty_Notification"></a></p>
+<h3>PagerDuty Notification</h3>
+<p>To configure this type of notification you need to get an Integration Key from PagerDuty. If you need help you can get all necessary information from PagerDuty help page:
+<code>https://developer.pagerduty.com/docs/get-started/getting-started/</code></p>
+<p>After the Key has been generated, it can be found on the Services -&gt; Integrations page in PagerDuty.
+<img src="./docs-img/pagerduty_2.png" alt="screenshot-lg">
+Enter it into the Beacon Manager in the PagerDuty Notification section.</p>
+<p>When the event is triggered from Beacon Manager side you will see it in PagerDuty on Incidents tab.
+<img src="./docs-img/pagerduty_3.png" alt="screenshot-lg"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-importing"></a>
+
+<p><a name="importing"></a></p>
+<h1>Importing</h1>
+<p>The Beacon Manager application includes a suite of importing features to help quickly add Zones, Beacons, Users and Roles.</p>
+<p><a name="import-zones"></a></p>
+<h2>Import Zone</h2>
+<p>User can bulk create zones by uploading a .csv file with the following header:</p>
+<ul>
+<li><strong>property_id(required | integer)</strong></li>
+<li><strong>name(required | max:255)</strong></li>
+<li><strong>notes(optional | string)</strong></li>
+<li><strong>lat(optional | float)</strong></li>
+<li><strong>lon(optional | float)</strong></li>
+<li><strong>address(optional | string | max:255)</strong></li>
+<li><strong>shapefile(optional | wkt_format)</strong></li>
+</ul>
+<p>Note that a maximum of 30 zones can be added in one file upload.</p>
+<p>An example of the .csv file:</p>
+<pre class="language-javascript">
+<span class="token punctuation"></span>
+    &nbsp;&nbsp;<span class="token string">property_id,name,notes,lat,lon,address,shapefile</span><br/>
+    &nbsp;&nbsp;<span class="token string">2000,load test,test notes,,,,</span><br>
+<span class="token punctuation"></span>
+</pre>
+<p><a name="import-beacons"></a></p>
+<h2>Import Beacon</h2>
+<p>User can bulk create beacons by uploading a .csv file with the following header:</p>
+<ul>
+<li><strong>name(required | max:255)</strong></li>
+<li><strong>mac_address(required | max:255)</strong></li>
+<li><strong>shortcode(required)</strong></li>
+<li><strong>type(required | in:negativeBeacon,masterBeacon)</strong></li>
+<li><strong>zone_id(required | integer)</strong></li>
+<li><strong>notes(optional)</strong></li>
+</ul>
+<p>Note that a maximum of 30 beacons can be added in one file upload.</p>
+<p>An example of the .csv file:</p>
+<pre class="language-javascript">
+<span class="token punctuation"></span>
+    &nbsp;&nbsp;<span class="token string">name,mac_address,shortcode,type,zone_id,notes</span><br/>
+    &nbsp;&nbsp;<span class="token string">imported beacon,00:00:00:00:00:00,XYZ1,masterBeacon,1017,test notes</span><br>
+<span class="token punctuation"></span>
+</pre>
+<p><a name="import-users"></a></p>
+<h2>Import User</h2>
+<p>User can bulk create users by uploading a .csv file with the following header:</p>
+<ul>
+<li><strong>first_name(required | max:255)</strong></li>
+<li><strong>last_name(required | max:255)</strong></li>
+<li><strong>email(required | email | max:255 | unique)</strong></li>
+<li><strong>password(required | string | min:8)</strong></li>
+<li><strong>isSuperAdmin(required | boolean)</strong></li>
+<li><strong>tags(optional|comma-separated)</strong></li>
+<li><strong>permission-roles(optional | comma-separated)</strong></li>
+<li><strong>notes(optional | text)</strong></li>
+<li><strong>pass_change_login(optional | boolean)</strong></li>
+<li><strong>send-email(optional | text)</strong></li>
+</ul>
+<p>Tags field: Enter comma-separated list tags.</p>
+<p>Permission-Roles field: Enter a comma-separated list of valid permission strings and role keys (prefixed with $).</p>
+<p>Note that a maximum of 30 users can be added in one file upload.</p>
+<p>Send-email field: Enter a string with structure: &quot;true,password,permission,documentation,message:'This is my message'&quot;.</p>
+<p>An example of the .csv file:</p>
+<pre class="language-javascript">
+<span class="token punctuation"></span>
+    &nbsp;&nbsp;<span class="token string">first_name,last_name,email,password,isSuperAdmin,tags,permission-roles,notes,pass_change_login,send-email</span><br/>
+    &nbsp;&nbsp;<span class="token string">Name,Surname,user@mail.com,Pa$$w0rd,0,,"property:2000.beacon.*,property:2000.beacon.update.*,property:2000.beacon.create.*",test notes,,</span><br>
+<span class="token punctuation"></span>
+</pre>
+<p><a name="import-roles"></a></p>
+<h2>Import Role</h2>
+<p>User can bulk create roles by uploading a .csv file with the following header:</p>
+<ul>
+<li><strong>name(required | max:255)</strong></li>
+<li><strong>key(required | max:255)</strong></li>
+<li><strong>permissions(required | comma-separated)</strong></li>
+<li><strong>notes(optional | text)</strong></li>
+</ul>
+<p>Permissions field: Enter a comma-separated list of valid permissions.</p>
+<p>Note that a maximum of 30 roles can be added in one file upload.</p>
+<p>An example of the .csv file:</p>
+<pre class="language-javascript">
+<span class="token punctuation"></span>
+    &nbsp;&nbsp;<span class="token string">name,key,permissions,notes</span><br/>
+    &nbsp;&nbsp;<span class="token string">New role,new_role,"property:2000.beacon.*,property:2000.beacon.update.*,property:2000.beacon.create.*",role notes</span><br>
+<span class="token punctuation"></span>
+</pre>
+<p><a name="import-negativebeacons"></a></p>
+<h2>Import Negative Beacon</h2>
+<p>It is possible to bulk create Negative Beacons by uploading a .csv file with the following header:</p>
+<ul>
+<li><strong>name(required | text)</strong></li>
+<li><strong>type(optional | integer)</strong></li>
+<li><strong>uuid(required | text)</strong></li>
+<li><strong>major(required | integer)</strong></li>
+<li><strong>minor(required | integer)</strong></li>
+<li><strong>property_id(required | integer)</strong></li>
+<li><strong>zone_id(optional | integer)</strong></li>
+<li><strong>tags(optional | text)</strong></li>
+<li><strong>notes(optional | text)</strong></li>
+<li><strong>for_always(optional | integer)</strong></li>
+<li><strong>block_from(optional | date)</strong></li>
+<li><strong>block_to(optional | date)</strong></li>
+</ul>
+<p>An example of the .csv file:</p>
+<pre class="language-javascript">
+<span class="token punctuation"></span>
+    &nbsp;&nbsp;<span class="token string">name,type,uuid,major,minor,property_id,zone_id,tags,notes,for_always,block_from,block_to</span><br/>
+    &nbsp;&nbsp;<span class="token string">Negative Beacon 1,,47ad845e-ac84-4b12-9744-e9364973a5f1,4,5,133,,,,1,,</span><br>
+<span class="token punctuation"></span>
+</pre>
+<p><a name="import-permissions"></a></p>
+<h2>Import Permissions</h2>
+<p>It is possible to bulk add Permissions to Users and Roles by uploading a .csv file with no header required.</p>
+<p>An example of the .csv file:</p>
+<pre class="language-javascript">
+<span class="token punctuation"></span>
+    &nbsp;&nbsp;<span class="token string">property:3724.beacon.*</span><br>
+    &nbsp;&nbsp;<span class="token string">property:3724.beacon.delete</span><br>
+    &nbsp;&nbsp;<span class="token string">property:3724.negative_beacon.create.generate</span><br>
+<span class="token punctuation"></span>
+</pre>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-exporting"></a>
+
+<h1>Exporting</h1>
+<p>The search results from the Beacon Manager can be rather robust and tedious to scroll through. To create an editable copy of the results outside of PinPoint, you can utilize the export feature. The export will create a .csv file that is generated in a background process and sent to the email address associated with your log-in profile. Searches and exports can be performed for Properties, Zones, Beacons, Alerts, Users and Roles.</p>
+<p>To perform an export, you must have the correct permissions assigned in the User Manager. If you are unable to view the 'Export' options at the bottom right-hand corner of the screen, please contact your GeoComply Account Manager.</p>
+<h3>To export out of the Beacon Manager:</h3>
+<ol>
+<li>Start by selecting Properties, Zones, Beacons, Alerts or Access from the top of the Beacon Manager screen.</li>
+<li>All related items registered to your account will automatically appear in your search results. To narrow your results, click on the <strong>Search</strong> button at the top of the screen and either enter the specific property/zone/beacon information or select from one or more of the drop-down boxes:</li>
+</ol>
+<p><img src="../docs-img/search_option.png" alt="screenshot-lg"></p>
+<ol start="3">
+<li>After your search has completed, you can sort the results using the up and down arrows on the column headings:</li>
+</ol>
+<p><img src="./docs-img/sort_option.png" alt="screenshot"></p>
+<ol start="4">
+<li>After you have your results parsed down and filtered, you can export the results to a .csv file.</li>
+<li>To start the export, you can either elect to <strong>Export All Results</strong> or <strong>Export Page Results</strong> by selecting one of the two options at the bottom of the screen:</li>
+</ol>
+<p><img src="./docs-img/export_option.png" alt="screenshot"></p>
+<ol start="6">
+<li>After starting the export, you'll see a screen similar to this one:</li>
+</ol>
+<p><img src="./docs-img/screen_option.png" alt="screenshot"></p>
+<ol start="7">
+<li>
+<p>Select the options you'd like exported from the list (or choose to select/unselect all), and click to <strong>Start Export</strong>.</p>
+</li>
+<li>
+<p>A link to the created file will be sent to your email address:</p>
+</li>
+</ol>
+<p><img src="./docs-img/file_export_complete.png" alt="screenshot"></p>
+<ol start="9">
+<li>
+<p><strong>Note: You must be logged into the Beacon Manager on your computer or device to download the .csv file. If you are logged out, it will open another browser window so you can enter your login information.</strong></p>
+</li>
+<li>
+<p>After clicking the <strong>Download File</strong> button in the email you received, you may have to click to download the file by selecting the option in the lower left-hand corner of your browser. The .csv file will then open in MS Excel (or a similar program) on your computer, allowing you to modify, filter, sort or save your options.</p>
+</li>
+<li>
+<p>Also note that you can only run three concurrent exports at one time from the Beacon Manager. If an export fails for any reason you'll see a message similar to this one:</p>
+</li>
+</ol>
+<p><img src="./docs-img/export_fail.png" alt="screenshot"></p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-statuspage"></a>
+
+<h1>Status Page</h1>
+<p>The Status Page provides a snapshot of the operator's current fleet status, including which beacons are currently offline, were recently offline, or any other information such as new alerts and notifications. This page automatically refreshes the status to reflect the current health of the operator team's assigned beacons.</p>
+<p><a name="playsound"></a></p>
+<h2>Play Sound</h2>
+<p>To enable the 'Play Sound' notification, follow the instructions for your selected browser:</p>
+<h4>Chrome</h4>
+<ul>
+<li>Open 'chrome://settings/content/sound'</li>
+<li>Confirm that the option to 'Allow sites to play sound' is enabled.</li>
+<li>If necessary, add the website to the list of allowed sites.</li>
+<li>Relaunch Chrome.</li>
+</ul>
+<h4>Safari</h4>
+<ul>
+<li>Click on 'Safari' at the top of your screen, and select 'Preferences.'</li>
+<li>Select the 'Website' tab.</li>
+<li>Choose the 'Auto-play' option on the left-hand side of the screen.</li>
+<li>Select &quot;Allow All Auto-Play&quot;.</li>
+<li>Relaunch Safari.</li>
+</ul>
+<h4>Firefox</h4>
+<ul>
+<li>Click on the menu button and select 'Options.'</li>
+<li>You can either run a search for &quot;autoplay&quot; or select 'Privacy &amp; Security' and then scroll down to the 'Permission' section.</li>
+<li>For the Autoplay option, click the 'Settings' button.</li>
+<li>Use the 'Default for all websites' drop-down menu and elect to allow all audio and video.</li>
+<li>Click to save your changes and relaunch Firefox.</li>
+</ul>
+<h4>Edge</h4>
+<ul>
+<li>Auto run</li>
+</ul>
+<p><a name="permission"></a></p>
+<h2>Permission</h2>
+<p>To access the Status Page, your user profile must have the <em>property:x.view.basic</em> permission assigned.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-pindropmap"></a>
+
+<p><a name="overview"></a></p>
+<h1>PinDrop Map</h1>
+<p>This page shows you a live, real-time view of current PinPoint transactions for a specific property.</p>
+<ul>
+<li>The map can be zoomed and panned similar to the features for Google Maps.</li>
+<li>This page displays live information, with a refresh rate of ~3 seconds.</li>
+</ul>
+<p><img src="./docs-img/pindrop-map.png" alt="screenshot-lg"></p>
+<p><a name="zone-sidebar"></a></p>
+<h2>Zone sidebar</h2>
+<p>The map sidebar allows you to choose a specific zone. After making a selection, the map will automatically pan to that zone and will highlight it in orange.</p>
+<p><img src="./docs-img/sidebar-zone.png" alt="screenshot"></p>
+<p><a name="permission"></a></p>
+<h2>Permission</h2>
+<p>To access the PinDrop map, your user profile must have the <em>property:x.view.pindrop</em> permission assigned.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Beacon Manager-create-user"></a>
+
+<h1>Create a User</h1>
+<h2>I. To Create a Single User</h2>
+<h4>User Details</h4>
+<ol>
+<li>Click on <strong>Access</strong> &gt; <strong>Users</strong>.</li>
+<li>Click <strong>Create User</strong>.</li>
+<li>Enter user details, including first name, last name, and email address.</li>
+<li>For the password, you can elect to manually enter one or click on <strong>Password Generator</strong> to have one automatically created for you. Manually created passwords must have at least 8 characters, including an uppercase letter, a lowercase letter, a number, and a special character.</li>
+<li>Select if the new user is to be a Super Admin.</li>
+<li>If you want to force the user to create a new password when accessing the system for the first time, select Yes for the <strong>Force PW Change</strong> option.</li>
+<li>Enter any Tags or optional notes.</li>
+</ol>
+<h4>Permission and Roles</h4>
+<ol>
+<li>You have two options when assigning the permission and roles for the new user:
+<ol>
+<li>Click on <strong>Add By Selector,</strong> and then utilize the drop-down lists for both items. As you make an election on either tab, additional drop-down lists will appear so you can narrow down to the desired option.</li>
+<li>Type the role / permission in the text box and it will auto fill with the available options. As you find the correct option, select it and click <strong>Add</strong>. Continue this process until all permissions and/or roles have been added.</li>
+</ol>
+</li>
+<li>The list of assigned permissions and/or roles will appear below the entry options. Click on the <strong>Remove</strong> button to delete any incorrect entries.</li>
+</ol>
+<h4>Email</h4>
+<p>After creating the user you can elect to send them an email with log in information. If you enable the <strong>Send Email</strong> option, select which information you want sent, including password, assigned permissions, a link to documentation, and a customizable message.</p>
+<p>When you are finished, click <strong>Create User</strong>.</p>
+<h2>II. Add Multiple Users</h2>
+<p>To add multiple users at the same time, you can upload a .csv file.</p>
+<ol>
+<li>Click on the <strong>upload a .csv</strong> link.</li>
+<li>Once the box opens, browse to the location of the file on your computer and select it.
+<ol>
+<li>On the upload screen, there is a link to a document indicating the correct header formats for the .csv file.</li>
+<li>If you would like to have a password automatically generated for one or more users:
+<ul>
+<li>Leave the password box empty in the .csv file and one will be automatically created for them.</li>
+<li>If you choose the autogenerate option, you must select to have an email sent to the new user in order to provide them their password information. To do this, enter the following into the <strong>send-email</strong> field on the .csv file (modify for the information you want sent): &quot;true,password,permission,documentation,message:'This is my message'&quot;.</li>
+<li>It is also encouraged to have the new user(s) change their password upon their initial login.
+<strong>Example .csv file with password generate and email options selected:</strong>
+<img src="./docs-img/user-create-page.png" alt="screenshot-lg"></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>After selecting your file, click <strong>Upload</strong>.</li>
+<li>If your file isn't properly formatted, you'll receive an error screen indicating which fields need to be corrected. Modify your .csv import file, and click to <strong>Try Again</strong>.</li>
+<li>After your file is successfully imported, a preview screen will open so you can verify each of the users and their associated information. Once you've confirmed it is correct, click <strong>Confirm Import</strong> and your users will be created.</li>
+</ol>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Advanced Features<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Advanced Features-tagged-boundaries"></a>
+
+<blockquote class="warning">
+<p>This page documents an <strong>Advanced Feature</strong> and should only be used after directed by your GeoComply Account Manager.</p>
+</blockquote>
+<h1>Tagged Boundaries</h1>
+<p><a name="overview"></a></p>
+<h2>PinPoint Tagged Boundaries Feature</h2>
+<p>One feature of the PinPoint indoor geolocation solution is the ability to pass property/zone/beacon information to the GeoComply transaction <strong>XML response</strong>.</p>
+<p>This document explains how to take advantage of this feature to allow additional operator logic based on the user's proximity to a beacon zone. Examples include enabling promotions only within property bounds or allowing on-site registration only in certain sections of a property.</p>
+<p><a name="description"></a></p>
+<h2>Description</h2>
+<p>There are 3 types of tagged boundaries:</p>
+<ul>
+<li>Property level. When a new property is created, the boundary value follows the format of: <code>PINPOINT_Property_&lt;property_id&gt;_&lt;property_name&gt;</code>. That value can be changed later.</li>
+<li>Zone level. When a new zone is created, the boundary value follows the format of: <code>PINPOINT_Zone_&lt;zone_id&gt;_&lt;zone_name&gt;</code>. The override is Yes. That value can be changed later.</li>
+<li>Beacon level. When a new beacon is created, the boundary value follows the format of: <code>PINPOINT_Zone_&lt;zone_id&gt;_&lt;zone_name&gt;</code>. The override is No. That value can be changed later.</li>
+</ul>
+<p>Only one tagged boundary can be passed to the transaction, and the Override flag controls it.</p>
+<p style="text-align:center;">
+  <img src="./docs-img/advancedfeatures/tagged-boundary1.png" width="300" align="middle">
+  <img src="./docs-img/advancedfeatures/tagged-boundary2.png" width="300" align="middle">
+</p>
+<ul>
+<li>If you want to pass a tagged boundary on a property level, all overrides should be removed from the nested zones and beacons.</li>
+<li><strong>Default option</strong>. If you want to pass a tagged boundary on a zone level, all overrides should be removed from the nested beacons, and the zone's override should be set to Yes.</li>
+<li>If you want to pass a tagged boundary on a beacon level, you need to set the beacon's override to Yes.</li>
+</ul>
+<p><a name="example"></a></p>
+<h2>Example</h2>
+<p>For example, if you added your beacon to a <strong>Zone</strong> called &quot;SecondFloor,&quot; when a transaction occurs within a range of this beacon, you will receive the response:</p>
+<pre><code class="language-xml">&lt;boundary name=&quot;PINPOINT_Zone_42_SecondFloor&quot;/&gt;
+</code></pre>
+<p><a name="exclusion_tagged_boundary"></a></p>
+<h2>Exclusion Tagged Boundary</h2>
+<p>Any property/zone/beacon can be configured as an exclusion. Any beacon located in that property/zone will fail transactions if scanned successfully. Essentially, it will act as a negative beacon. To configure a zone in this manner, you’ll need to make configuration changes in both the Beacon Manager and Back Office. You need to add &quot;-BLOCK-&quot; anywhere in the tagged boundary name. Note that changes should be made in Back Office as well. For more information, contact your GeoComply Account Manager.</p>
+<p>There are 3 options:</p>
+<ul>
+<li>The tagged boundary on a property level. If you add -BLOCK- to the property name, all beacons belonging to that property will fail. In order to make this configuration, all overrides should be removed from the nested zones and beacons.</li>
+<li><strong>Default option</strong>. The tagged boundary on a zone level. If you add -BLOCK- to the zone name, all beacons belonging to that zone will fail. In order to make this configuration, you need to override that zone and remove all overrides from the nested beacons.</li>
+<li>The tagged boundary on a beacon level. If you add -BLOCK- to the beacon name, it will fail just that beacon. In order to make this configuration, you need to override that beacon.</li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Advanced Features-env-selection"></a>
+
+<span class = "badge bg-info" style ="font-size:20px;margin:10px;margin-bottom:20px">Added in v2.1</span>
+<blockquote class="warning">
+<p>This page documents an <strong>Advanced Feature</strong> and should only be used after directed by your GeoComply Account Manager.</p>
+</blockquote>
+<h1>Environment Selection</h1>
+<p><a name="intro"></a></p>
+<h2>Introduction</h2>
+<p>Occasionally, platform providers may find themselves wanting to configure Master Beacon devices to a non-production environment. This typically takes place during a development, testing or user acceptance testing (UAT) phase in the operator's product lifecycle. Fortunately, doing so is a breeze with v2.1+ Master Beacon units.</p>
+<p>Configuring a Master Beacon unit can be done at the time of set up, and re-configured again should required. After a Master Beacon is configured, the device will be set to use the respective environment's Beacon Manager, GeoComply Engine Service and configuration settings.</p>
+<p>In the footer of all pages, you should be able to see the abbreviation of what environment is currently set. If no environment text is visible, the device is configured to production.</p>
+<blockquote class="white.fa-info-circle">
+<p>Remember that each environment has its own set of Beacon Manager credentials. Your Production Beacon Manager account is different from your Staging Beacon Manager account and may have a different email address or password.</p>
+</blockquote>
+<p><a name="envs"></a></p>
+<h2>Environments</h2>
+<p>Each Master Beacon may be configured to four (4) available environments at the time of setup. All units are configured by default to <strong>Production (PROD)</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Purpose</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production (PROD)</td>
+<td>Live operators with end users.</td>
+<td>https://pinpoint.geocomply.com</td>
+</tr>
+<tr>
+<td>Staging (STG)</td>
+<td>Commonly used during the customer integration or testing phase.</td>
+<td>https://pinpoint-stg.geocomply.net</td>
+</tr>
+<tr>
+<td>QAT-current</td>
+<td>Internal GeoComply testing only.</td>
+<td></td>
+</tr>
+<tr>
+<td>QAT-development</td>
+<td>Internal GeoComply testing only.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="config"></a></p>
+<h2>Configuring</h2>
+<p>After you've connected to the Master Beacon's Wi-Fi set up access point, you can configure a Master Beacon unit to a different environment by navigating to <code>http://masterbeacon.pinpoint/users/env_config</code> or <code>http://192.168.4.1/users/env_config</code>.</p>
+<p><img src="./docs-img/mb/env_config.png" alt="screenshot-lg"></p>
+<p>This environment configuration will remain valid through all new sessions and device restarts until it is modified again.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Back Office<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Back Office-common-errors"></a>
+
+<h1>Common Errors</h1>
+<p>This page helps to explain all possible errors. You can find the list of errors along with the troubleshooting steps below.</p>
+<p><a name="rssi"></a></p>
+<h2>RSSI threshold</h2>
+<p>This error occurs when a device's RSSI value is lower than the RSSI threshold value configured for the corresponding beacon.</p>
+<ul>
+<li>Log in to Back Office and find the failed transaction (“Transactions” tab in the top bar).</li>
+<li>Navigate to tab “Beacons”, column “In Effect” should show “No”. It means the beacon was scanned but the transaction was rejected.</li>
+</ul>
+<p><img src="./docs-img/bo/rssi_threshold_1.png" alt="image"></p>
+<p>Now we need to get RSSI value from Kibana.</p>
+<ul>
+<li>Login to Kibana, select “Discover” in the left side bar.</li>
+<li>Then you need to add a filter for the transaction (“gc_transaction” field), select the corresponding date range.</li>
+<li>When the transaction is found you need to add the following fields: “beacons.name” and “beacons.rssi”.</li>
+</ul>
+<p><img src="./docs-img/bo/rssi_threshold_2.png" alt="image"></p>
+<p>Next you need to check the RSSI threshold for the beacon.</p>
+<ul>
+<li>Log in to Beacon Manager, navigate to “Beacons” tab in the top bar.</li>
+<li>Click “Search” and enter Beacon Name value (you can find that value from “beacons.name” field in Kibana, it will be the 3rd value delimited by underscore).</li>
+<li>Click on the beacon record to open the properties.</li>
+</ul>
+<p><img src="./docs-img/bo/rssi_threshold_3.png" alt="image"></p>
+<p>Finally, you just need to compare “beacons.rssi” value from Kibana and “RSSI” value from Beacon Manager.</p>
+<ul>
+<li>If “beacons.rssi” value is lower than “RSSI” value, it means the transaction failed because of the RSSI threshold set up for the beacon.</li>
+<li>If “beacons.rssi” is 0 and there is any “RSSI” value, it means the device couldn’t calculate RSSI value.</li>
+</ul>
+<p><a name="negative"></a></p>
+<h2>Negative beacon</h2>
+<p>In order to check errors related to negative beacons you need to perform following steps:</p>
+<ul>
+<li>Log in to the Back Office and find failed transaction (“Transactions” tab in the top bar).</li>
+<li>Navigate to tab “Beacons”, you should see “iBeacons” table.</li>
+<li>It should show “exclusion” value in the “Type” column.</li>
+</ul>
+<p><img src="./docs-img/bo/negative_beacon_1.png" alt="image"></p>
+<p>Alternatively, you can find the same information in Kibana.</p>
+<ul>
+<li>Login to Kibana, select “Discover” in the left side bar.</li>
+<li>Then you need to add a filter for the transaction (“gc_transaction” field), select the corresponding date range.</li>
+<li>When the transaction is found you need to add the following fields: “beacons.name”, “beacons.in_effect”, “beacons.uuid”.</li>
+<li>A negative beacon was in effect if: beacons.in_effect is 1, beacons.uuid is UUID of the negative beacon (that value is configured in the negative beacon’s configuration app) or beacons.name starts with something like “NB” or “Negative Beacon” (however, all negative bacons should follow that naming convention).</li>
+</ul>
+<p><img src="./docs-img/bo/negative_beacon_2.png" alt="image"></p>
+<p><a name="other"></a></p>
+<h2>Other errors</h2>
+<p>If there is no “Beacons” tab in the Back Office on the “Transactions” page, the error is caused by one of the following: bluetooth was disabled, location was disabled or there were no beacons in the proximity.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+<div style="page-break-before:always">&nbsp;</div>
+<h1 style="font-size:60px;color:#212529"><center>Internal Documents<center></h1>
+<br>
+<br>
+<br>
+<br>
+
+<a name = "Internal Documents-access-control"></a>
+
+<h1>Access Control</h1>
+<p>The Beacon Manager features an extensive permissions system to allow effective access management for all users. Almost every function in the Beacon Manager is tied to a permission, which means features can be enabled/disabled for individual customers depending on the needs of their deployment.</p>
+<p><a name="access-dashboard"></a></p>
+<h2>Access Dashboard</h2>
+<p>The <a href="/access/dashboard">Access Management Dashboard</a> offers a quick overview of entire permissions system of the Beacon Manager application. Here you can see a glance of all users and roles in the system.</p>
+<p><a name="permissions"></a></p>
+<h2>Permissions</h2>
+<p>There are two types of permissions on the Beacon Manager: <strong>System Permissions</strong> and <strong>Property Permissions.</strong> Regardless of the type of permission, each permission grants a user access to a function of the Beacon Manager.
+All permissions are generally referenced by their permission string. For example, <code>system.access.user.create</code> is a permission that grants <strong>system</strong> level <strong>access</strong> permission to <strong>create</strong> a <strong>user.</strong> Familiarizing yourself with the general format of permission strings will allow for quick entry. (Permissions will generally auto complete as you type.)</p>
+<p>No need to worry about knowing these permission strings when starting out however, as a convenient selector tool has also been created that can be used anytime a permission needs to be added.</p>
+<p><img src="./docs-img/access-control-selector-tool.png" alt="screenshot"></p>
+<p>In addition to this central documentation, permission documentation is provided within the Beacon Manager itself. If you see a permission, you can move your mouse over it to reveal help text.</p>
+<p><img src="./docs-img/access-control-tooltip.png" alt="screenshot"></p>
+<h3>System Permissions</h3>
+<p>&quot;Superadmin&quot;, high-level, or internal permission are otherwise known as <strong>System Permissions.</strong> These permissions generally grant access to features that span over the entire Beacon Manager application. Examples might include creating a property, viewing users' Audit Log entries, or creating new user accounts.</p>
+<p>System Permissions typically follow the format of <code>system.&lt;permission&gt;</code>.</p>
+<p>You can view all <a href="/docs/v3.0/internal/permission-definitions#system-permissions-property">System Permissions</a> on the System Permissions Definitions page.</p>
+<h3>Property Permissions</h3>
+<p><strong>Property Permissions</strong>, as the name suggests, grant permission to Property-specific functions. The Beacon Manager Access Controls allow for a user to have different permissions on a per-property basis. For example, we may grant internal staff edit access only to a few Properties, but read access to all.</p>
+<p>Property Permissions follow the format of <code>property:&lt;property_id&gt;.&lt;permission&gt;</code> where <code>&lt;property_id</code> is the unique Property ID of the property in the Beacon Manager.</p>
+<p>You can view all <a href="/docs/v3.0/internal/permission-definitions#property-permissions-property">Property Permissions</a> on the Property Permissions Definitions page.</p>
+<h3>Permission Tree</h3>
+<p>To better illustrate the hierarchy and structure of permissions, an interactive <a href="/visualize/permission-tree">Permission Tree</a> has been added to the Beacon Manager. This permission diagram shows all permissions the current user has, and includes documentation that opens when you click on a particular permission.</p>
+<p><img src="./docs-img/access-control-tree.png" alt="screenshot"></p>
+<h3>Super Admin</h3>
+<p>In addition to permissions, a user can be assigned to be a Super Admin. This is the highest level of permission for the Beacon Manager and automatically includes all permissions.</p>
+<p><a name="roles"></a></p>
+<h2>Roles</h2>
+<p>Another integral part of the Beacon Manager Access Controls system is the roles feature. External customers will routinely require a similar set of permissions for their user accounts. This is where roles come into play.</p>
+<p>Roles allow for a pre-defined set of permissions to quickly be assigned to a user. There is no limit to the number of permissions you can assign to a role.</p>
+<h3>Creating a Role</h3>
+<p>Roles can be created by users that have the <code>system.access.role.create</code> permission.</p>
+<p>When creating a role you can specify the following:</p>
+<ol>
+<li><strong>Name</strong> - An easily identifiable name.</li>
+<li><strong>Key</strong> - Used to quickly reference this role when adding by text or imports.</li>
+<li><strong>Notes</strong> - Optional notes for this role.</li>
+<li><strong>Permissions</strong> - A list of permissions initially added to this role, which can be modified later.</li>
+</ol>
+<p><img src="./docs-img/access-control-create-role.png" alt="screenshot"></p>
+<h3>Importing Roles</h3>
+<p>Roles can also be bulk imported via a Comma-Separated Value (CSV) file. This can be done by users who have the <code>system.access.role.create.import</code> permission.</p>
+<p>A <code>*.csv</code> file can be uploaded by going to the Create Role page and clicking <em><em>upload a</em> .csv file.</em>*</p>
+<h3>Copying Roles</h3>
+<p>When creating a new role, this feature provide the best way to copy permissions from another role. Also, a user can change the Property specified in the permissions. This can be done by users who have the <code>system.access.role.create</code> permission.</p>
+<p>A modal will show on the Create Role page when clicking the <strong>Copy Existing Role</strong> button.</p>
+<p><img src="./docs-img/copy-role-modal.png" alt="screenshot"></p>
+<p><a name="users"></a></p>
+<h2>Users</h2>
+<p>All users in the Beacon Manager can have an unlimited number of roles and permissions assigned to them. Having the <code>system.access.user.view.update</code> permission allows a user to edit other users' roles and permissions.</p>
+<h3>Assigning Permissions &amp; Roles</h3>
+<p>Permissions and roles can be assigned to a user in two ways.  On the user edit page, you can either:</p>
+<ol>
+<li>Add a permission/role by entering its permission string / role key.</li>
+<li>Use the selector tool to find and add a permission/role.</li>
+</ol>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Internal Documents-permission-definitions"></a>
+
+<h1>Permission Definitions</h1>
+<p>Use this page as a reference for all permission definitions on the Beacon Manager.</p>
+<h1>System Permissions</h1>
+<p>This section defines all <strong>System Permissions</strong>.</p>
+<p><a name="system-permissions-property"></a></p>
+<h2>Property</h2>
+<p>These permissions grant access to all properties at the property-level on Beacon Manager. Users with these permissions will have assigned permissions for all properties. Controlling specific access permissions on a per-property basis is not possible when assigning these permissions. Thus when this functionality is required we recommend assigning Property Permissions instead.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.properties.*</code></td>
+<td>Grants all actions across all properties.</td>
+</tr>
+<tr>
+<td><code>system.properties.create</code></td>
+<td>Allows for a new property to be created. Upon creating a new property, the user will be assigned all permissions for that property.</td>
+</tr>
+<tr>
+<td><code>system.properties.view</code></td>
+<td>View access to all properties.</td>
+</tr>
+<tr>
+<td><code>system.properties.view.update</code></td>
+<td>View &amp; update access to all properties.</td>
+</tr>
+<tr>
+<td><code>system.properties.view.delete</code></td>
+<td>View &amp; delete access to all properties.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="system-permissions-token"></a></p>
+<h2>Token</h2>
+<p>These permissions grant access to the API Authentication/Authorization portions of the Beacon Manager.</p>
+<p>Most users do not need these permissions.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.token.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>system.token.view</code></td>
+<td>View access to all existing API authentication tokens.</td>
+</tr>
+<tr>
+<td><code>system.token.view.update.*</code></td>
+<td>View and update access to all API authentication tokens. This is identical to the permission: system.token.*</td>
+</tr>
+<tr>
+<td><code>system.token.view.update.expire</code></td>
+<td>View and only update expiry date on existing API authentication tokens.</td>
+</tr>
+<tr>
+<td><code>system.token.view.update.revoke</code></td>
+<td>View and only revoke existing API authentication tokens.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="system-permissions-client"></a></p>
+<h2>Client</h2>
+<p>These permissions grant access to the API client portions of the Beacon Manager.</p>
+<p>Most users do not need these permissions.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.client.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>system.client.view</code></td>
+<td>View access to all existing API clients.</td>
+</tr>
+<tr>
+<td><code>system.client.view.create</code></td>
+<td>Create new API clients.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="system-permissions-access-control"></a></p>
+<h2>Access Control</h2>
+<p>These permissions grant access to the Beacon Manager Access Dashboard, which allows the user to manage users, roles and permissions. It is recommended to assign lower level permissions in this category to grant specific permissions, such as only updating existing users.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.access.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>system.access.user.*</code></td>
+<td>Grants all user management permissions.</td>
+</tr>
+<tr>
+<td><code>system.access.user.view</code></td>
+<td>View existing users and their account information.</td>
+</tr>
+<tr>
+<td><code>system.access.user.create</code></td>
+<td>Create new users and assign them permissions and roles.</td>
+</tr>
+<tr>
+<td><code>system.access.user.create.import</code></td>
+<td>Mass create new users via CSV import function.</td>
+</tr>
+<tr>
+<td><code>system.access.user.view.update</code></td>
+<td>View and update existing user information.</td>
+</tr>
+<tr>
+<td><code>system.access.user.view.delete</code></td>
+<td>View and delete existing users.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.access.role.*</code></td>
+<td>Grants all role management permissions.</td>
+</tr>
+<tr>
+<td><code>system.access.role.view</code></td>
+<td>View existing roles and their assigned permissions.</td>
+</tr>
+<tr>
+<td><code>system.access.role.create</code></td>
+<td>Create new roles and assign them permissions.</td>
+</tr>
+<tr>
+<td><code>system.access.role.create.import</code></td>
+<td>Mass create new roles via CSV import function.</td>
+</tr>
+<tr>
+<td><code>system.access.role.view.update</code></td>
+<td>View and update existing role information.</td>
+</tr>
+<tr>
+<td><code>system.access.role.view.delete</code></td>
+<td>View and delete existing roles.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="system-permissions-beaconlog"></a></p>
+<h2>Beacon Log</h2>
+<p>These permissions allow users to see detailed log messages sent by compatible Master Beacons. Most users do not need these permissions.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.beaconlog.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>system.beaconlog.view</code></td>
+<td>View all beacon log messages.</td>
+</tr>
+<tr>
+<td><code>system.beaconlog.view.delete</code></td>
+<td>View and delete existing beacon log messages.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="system-permissions-auditlog"></a></p>
+<h2>Audit Log</h2>
+<p>The Beacon Manager access log saves most user actions in the Beacon Manager. Most users do not need these permissions.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.auditlog.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>system.auditlog.view</code></td>
+<td>View the user's own audit log messages.</td>
+</tr>
+<tr>
+<td><code>system.auditlog.view.others</code></td>
+<td>View all users' audit log messages.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="system-permissions-documentation"></a></p>
+<h2>Documentation</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system.internaldocs.view</code></td>
+<td>Grants the user access to view &quot;internal&quot; documentation pages on the Beacon Manager documentation site</td>
+</tr>
+</tbody>
+</table>
+<h1>Property Permissions</h1>
+<p>This section defines all <strong>Property Permissions</strong>.</p>
+<p>It's important to note that the <code>x</code> in these permissions must be replaced with the Beacon Manager Property ID of the property you wish the permission to apply to.</p>
+<p><a name="property-permissions-property"></a></p>
+<h2>Property</h2>
+<p>These permissions grant users access to specified properties only. Many permissions are included in this category which allows for effective enabling/disabling of certain Beacon Manager features at a per user level.</p>
+<p>Due to the sheer number of permissions contained in this category, it is highly recommend to create pre-defined roles which can then be quickly assigned to users.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>property:x.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>property:x.view.basic</code></td>
+<td>Allows for basic view access to the property and all its zones and beacons.</td>
+</tr>
+<tr>
+<td><code>property:x.view.users</code></td>
+<td>Grants access to view other users that have view access to this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.licenses</code></td>
+<td>Grants access to view license limitations for this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.*</code></td>
+<td>Grants all update access to this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.basic</code></td>
+<td>Grants permissions to update basic fields for this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.engine_url</code></td>
+<td>Grants permissions to update engine url and path fields for this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.address</code></td>
+<td>Grants permission to update address field for this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.loc</code></td>
+<td>Grants permission to update location coordinate fields for this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.licenses</code></td>
+<td>Grants permission to update license limitations for this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.delete</code></td>
+<td>Grants permission to delete this property.</td>
+</tr>
+<tr>
+<td><code>property:x.view.pindrop</code></td>
+<td>Grants permission to view this property's live PinDrop transaction map.</td>
+</tr>
+<tr>
+<td><code>property:x.view.update.pindrop</code></td>
+<td>Grants permission to modify property and zone shapefiles used for PinDrop maps.</td>
+</tr>
+<tr>
+<td><code>property:x.view.statuspage</code></td>
+<td>Grants permission to view this property's live status page.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="property-permissions-zone"></a></p>
+<h2>Zone</h2>
+<p>These permissions grant users additional edit access to zones under the specified properties only. Many permissions are included in this category which allows for effective enabling/disabling of certain Beacon Manager features at a per user level.</p>
+<p>Due to the sheer number of permissions contained in this category, it is highly recommend to create pre-defined roles which can then be quickly assigned to users.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>property:x.zone.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>property:x.zone.create</code></td>
+<td>Create new zones in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.create.import</code></td>
+<td>Mass create new zones via CSV import in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.update.*</code></td>
+<td>Grants all update access to zones in the specificed property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.update.basic</code></td>
+<td>Grants permission to update basic fields for zones in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.update.address</code></td>
+<td>Grants permission to update address fields for zones in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.update.loc</code></td>
+<td>Grants permission to update location coordinate fields for zones in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.update.floorplan </code></td>
+<td>Grants permission to upload a floor plan to zones in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.zone.delete</code></td>
+<td>Grants permission to delete zones in this specified property.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="property-permissions-beacon"></a></p>
+<h2>Beacon</h2>
+<p>These permissions grant users additional access to beacons under the specified properties only. Many permissions are included in this category which allows for effective enabling/disabling of certain Beacon Manager features at a per user level.</p>
+<p>Due to the sheer number of permissions contained in this category, it is highly recommend to create pre-defined roles which can then be quickly assigned to users.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>property:x.beacon.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>property:x.beacon.view.advanced</code></td>
+<td>Grants view permission for advanced fields such as &quot;created by&quot; and &quot;created via&quot; for beacons in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.view.scan.*</code></td>
+<td>Grants view permission for all scanning features for beacons in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.view.scan.wifi</code></td>
+<td>Grants view permission for wifi scanning features for beacons in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.view.scan.bluetooth</code></td>
+<td>Grants view permission for bluetooth scanning features for beacons in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.create.*</code></td>
+<td>Grants all create beacon permissions in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.create.web</code></td>
+<td>Grants create beacon permissions via web for specified property. No longer used.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.create.web.import</code></td>
+<td>Grants create beacon permissions via web and mass CSV import for specified property. No longer used.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.create.api</code></td>
+<td>Grants create beacon via API permission for this property. Required to allow user to go through Master Beacon set up.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.update.*</code></td>
+<td>Grants update permissions for all fields for beacons in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.update.floorplan </code></td>
+<td>Grants permission to update floor plan location for beacons in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.update.rssi</code></td>
+<td>Grants permission to update beacons RSSI values in this specified property.</td>
+</tr>
+<tr>
+<td><code>property:x.beacon.delete</code></td>
+<td>Grants permission to delete beacons in this specified property.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="property-permissions-alert"></a></p>
+<h2>Alert</h2>
+<p>These permissions grant users access to the alerting features of the Beacon Manager. Many permissions are included in this category which allows for effective enabling/disabling of certain alert notification channels.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>property:x.alert.*</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>property:x.alert.view</code></td>
+<td>Grants access to view alerts contained in this property, its zones and beacons.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.hidden</code></td>
+<td>Grants additional access to view hidden alerts.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.create</code></td>
+<td>Grants access to create new alerts for this property, its zones and beacons.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.update.*</code></td>
+<td>Grants all updating permissions for alerts in this property, its zones and beacons.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.update.basic</code></td>
+<td>Grants only basic update permissions for alerts.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.update.email</code></td>
+<td>Grants access to view and set up email notification channel.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.update.slack</code></td>
+<td>Grants access to view and set up Slack notification channel.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.update.webhook</code></td>
+<td>Grants access to view and set up webhook notification channel.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.update.pagerduty</code></td>
+<td>Grants access to view and set up PagerDuty notification channel.</td>
+</tr>
+<tr>
+<td><code>property:x.alert.view.delete</code></td>
+<td>Grants delete permissions to alerts in this property, its zones and beacons.</td>
+</tr>
+</tbody>
+</table>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Internal Documents-ota-mender-updating"></a>
+
+<h1>OTA Update with Mender</h1>
+<h2>I. Register the Master Beacon to the Mender server</h2>
+<p>The Master Beacon will automatically connect to the production server <a href="https://ota-mender.geocomply.net" target="_blank">ota-mender.geocomply.net</a>. When the Master Beacon boots up, it connects to the server and requests authorization. You'll have to manually accept this request before using the OTA updating feature. To do this:</p>
+<ol>
+<li>Go to <a href="https://ota-mender.geocomply.com/ui/#/devices/pending" target="_blank">ota-mender.geocomply.com/ui/#/devices/pending</a>.</li>
+<li>Click on <strong>Pending status</strong>.</li>
+<li>Click on <strong>Accept, reject, or dismiss device</strong>.</li>
+<li>Click <strong>Accept Action</strong>.</li>
+</ol>
+<p>In the future, a pre-authorization feature will be available. This will streamline the process so that the Master Beacon request is automatically accepted without needing any further action for the Beacon to connect to the server, thus removing the previously listed steps from the process.</p>
+<h2>II. Update</h2>
+<p>There are two types of updates: a system update and a service update. Both use the same method to update the Master Beacon, but the system update tends to take much longer than the service.</p>
+<h3>II.1 Prepare the File</h3>
+<p>The development team will prepare a file (with a naming structure of <em>filename.mender</em>) with the updated code and upload it to S3 so it is available when you are ready to run the update.</p>
+<h3>II.2 Upload the File</h3>
+<p>Go to <a href="https://ota-mender.geocomply.com/ui/#/releases" target="_blank">ota-mender.geocomply.com/ui/#/releases</a>. Click 'Upload', then select the correct file from the list (note: update files will have the suffix .<em>mender</em>). Click 'Upload' to start the process.</p>
+<h3>II.3 Create the Deployment</h3>
+<p>After the file is uploaded, you'll need to select which device is to receive the update (i.e. the 'target device'). To do this, you'll have to create a deployment which will assign which file goes to which device. In essence, the deployment is the process by which the Master Beacon is updated.</p>
+<p>To start the process, go to <a href="https://ota-mender.geocomply.com/ui/#/deployments" target="_blank">ota-mender.geocomply.com/ui/#/deployments</a>. Click 'CREATE DEPLOYMENT WITH THIS RELEASE'; then select which device you want to update. The drop-down list of device options will appear when you place the cursor in the selection box:</p>
+<p><img src="./docs-img/ota-mender-updating.png" alt="screenshot"></p>
+<p>Click 'Next' to review the deployment information, then click 'CREATE' to trigger the deployment. The deployment will start by downloading the file into the target Master Beacon. During a system update, the deployment will advance through the following steps: download &gt; backup data &gt; switch active partition &gt; reboot &gt; sync data &gt; commit update &gt; complete.</p>
+<h3>II.4 Check Deployment Status</h3>
+<p>To check the status of the deployment, access the log on the UI at <a href="https://ota-mender.geocomply.com/ui/#/deployments" target="_blank">ota-mender.geocomply.com/ui/#/deployments</a> under the &quot;Active&quot; or &quot;Finished&quot; tabs. To confirm the device has the correct software, click on the &quot;Devices&quot; tab.</p>
+<p>To see a live demo of using Mender, please check <a href="https://drive.google.com/file/d/1RhQFJVmfQpJiqYllI_PrctAPQvzLz78j/view?usp=sharing" target="_blank">Demo Video</a>.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Internal Documents-global-settings"></a>
+
+<h1>Global Settings</h1>
+<p><img src="./docs-img/global-settings-screen.png" alt="screenshot"></p>
+<p>The Global Settings page allows you to store certain settings in one location for use across the Beacon Manager. Note that if the settings on the page are configured incorrectly, it could break application functionality, so confirm any entered information before saving your settings.</p>
+<ol>
+<li><strong>Enable Public Registration</strong>: to allow anyone to register for an account using a public user registration page, enable this option.</li>
+<li><strong>Back Office Environments</strong> are used to configure the environment for the Beacon Manager.</li>
+<li>The <strong>Alert Notification Frequency</strong> defines how many hours pass between notifications being sent regardless of an alert having been triggered. By default, this value is set at 1 hour, but you can change it to a maximum of 24 hours between alert notifications. This field only allows for integers, so enter a whole number between 1 and 24.</li>
+<li>The <strong>Beacon Engine Uptime Threshold</strong> is used to define how many minutes pass between checking if the beacon is on or offline.  The default is 5 minutes between checks, but you can enter a maximum of 1440 minutes (or one day). This field only allows for integers, so enter a whole number between 5 and 1440.</li>
+<li>The <strong>Static Version</strong> is used to store static files such as Javascript or CSS. It assists in caching the files and can be used to force an immediate static file refresh.</li>
+<li>The <strong>BackOffice Settings</strong> is used to configure the logic for the <em>BO Settings</em> tab on the <em>View Property</em> page. All the details can be found in the following CR: https://geocomply.atlassian.net/wiki/spaces/GD/pages/1952579819/Create+a+new+page+in+BM+to+show+BO+Indoor+settings.</li>
+<li>After updating (and confirming) your settings click the <em>Save Settings</em> button.</li>
+</ol>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Internal Documents-bo-settings"></a>
+
+<h1>Back Office Settings</h1>
+<ul>
+<li>Back Office Settings</li>
+</ul>
+<p>There is a possibility to see <em>BO settings</em> on the <em>View Property</em> page under <em>BO Settings</em> tab. It displays predefined settings from BO for the corresponding operator. The main purpose of this page is to validate if an operator was configured correctly for <em>Indoor</em> and <em>Hybrid</em>. It also helps to get some settings from BO without logging in to BO.</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/bo-settings.png" width="600" align="middle">
+</p>
+<ul>
+<li><strong>Parameter</strong> shows parameter name, id and description.</li>
+<li><strong>Value</strong> shows the value of the parameter.</li>
+<li><strong>Indoor/Hybrid</strong> show if a parameter has been configured correctly for <em>Indoor/Hybrid</em> solution. The logic is defined on the <em>Global Settings</em> page, in the <em>BackOffice Settings</em> JSON.</li>
+<li><strong>Comment</strong> shows comments for a certain parameter. The value is defined on the <em>Global Settings</em> page, in the <em>BackOffice Settings</em> JSON.</li>
+</ul>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Internal Documents-doc-generator"></a>
+
+<h1>Documentation Generator</h1>
+<ul>
+<li>The Documentation Generator is used to generate a .PDF version of the help page section.</li>
+<li>To open this page click on <strong>Internal Tools</strong> in the footer of the main page, and then select the <strong>PinPoint Docs Generator</strong> menu.</li>
+<li>You can then change the title and select which chapters you want to include in the document.</li>
+<li>Click <strong>Generate Document</strong> to finish. You will receive an email containing the link to download the file.</li>
+</ul>
+<p style="text-align:center;">
+<img src="./docs-img/internal/doc-gen.png" width="600" align="middle">
+</p>
+<p>The user should have <strong>system.tools.docs_generator</strong> permission to access the page and <strong>system.internaldocs.view</strong> to generate the internal section.</p>
+
+<div style="page-break-after:always">&nbsp;</div> 
+
+<a name = "Internal Documents-internal-manual"></a>
+
+<h1>Internal Manual</h1>
+<p><a name="properties"></a>
+##Properties</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/create-property.png" width="600" align="middle">
+<img src="./docs-img/internal/im/create-property2.png" width="600" align="middle">
+</p>
+<p>After the Property has been created on its page all the details ( including Operator name and Operator ID) will be displayed:</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/property.png" width="300" align="middle">
+</p>
+<p><a name="beacons"></a>
+##Beacons</p>
+<p>Adding Master Beacons should be done via the physical beacon UX as instructed in the ‘Master Beacon Installation and Setup’ section of this document. The ‘Create’ beacon functionality is only for older beacon models.
+As Creating a Beacon directly on the Beacon Manager is no longer supported for new beacons. The correct behaviour is to configure the Beacon directly on the device itself. To prevent someone from creating a new beacon on the Beacon Manager by mistake, the following notice will appear after clicking ‘Create beacon’ button:</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/create-beacon.png" width="600" align="middle">
+</p>
+<p>Beacons can be monitored directly from the dashboard and are also visible under Properties, Zones and Beacons tabs. The RSSI value is the only editable section under every individual beacon.
+The RSSI value should be updated as per the recommendation under the ‘RSSI Value’ section in Beacon Scanner, and a reason has to be filled in for logging purposes. ‘Edit’ option at the top right corner when under a beacon lets you edit the RSSI value of the beacon as seen below. Empty value means the beacon is broadcasting the RSSI value at its highest.</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/beacon-edit.png" width="600" align="middle">
+</p>
+<p>The Master Beacon can also be deleted should you have the permission to do so on the Beacon Manager by clicking on the ‘Delete Beacon’ option on the top right corner under the individual beacon.</p>
+<p><a name="user-management"></a>
+##User management</p>
+<p>At present, only GeoComply has the ability to create users, assign permissions and delete users in Beacon Manager. This can be found under the ‘Users’ tab on the top right panel.</p>
+<p>You can find more information how to create a user here: <a href="/docs/v3.0/bm/create-user">Create User</a>.</p>
+<p>###Creating, Editing and Deleting Users</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/create-user.png" width="600" align="middle">
+</p>
+<ul>
+<li>
+<p>Add Property: Under Property Permissions, click on ‘Add Property’ and select the property the user belongs to.</p>
+</li>
+<li>
+<p>Add Permissions or Rule: This is where you would include all the permissions or rules the user needs depending on their role. Usually, the operator will specify these permissions for the requested user. Following is a list of permissions available in Beacon Manager:</p>
+<ol>
+<li>system.properties.* - Internal Only</li>
+<li>property:x.zone.* - Client Admin &amp; Ops Only</li>
+<li>property:x.beacon.create.* - Every user who needs the ability to add a beacon will need this permission</li>
+<li>property:x.beacon.create.web.import - Client Admin &amp; Ops Only</li>
+<li>property:x.beacon.update.rssi - Onsite Installers, Client Admin &amp; Ops</li>
+<li>property:x.beacon.delete - Onsite Installers, Client Admin &amp; Ops</li>
+<li>property:x.alert.* - Client Admin &amp; Ops Only</li>
+</ol>
+</li>
+<li>
+<p>Delete Users: Select the user and click on ‘Delete User’ at top right to delete</p>
+</li>
+<li>
+<p>Edit Users: The same tab ‘Users’ on top right panel can be used to edit these settings by clicking on ‘View User’</p>
+</li>
+</ul>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/user.png" width="600" align="middle">
+</p>
+<p>Permission Matrix for Beacon Manager Roles</p>
+<p>| Role | Permissions | Notes |
+| : | :- | : |
+| Client Master Admin (for clients Admins) | property:x.alert.view<br>property:x.alert.create<br>property:x.alert.view.update.*<br>property:x.alert.view.delete<br>property:x.view.basic<br>property:x.view.update.address<br>property:x.zone.create<br>property:x.zone.update.basic<br>property:x.zone.update.address<br>property:x.zone.update.loc<br>property:x.zone.delete<br>property:x.zone.update.floorplan<br>property:x.beacon.create.api<br>property:x.beacon.update.floorplan<br>property:x.beacon.update.rssi<br>property:x.beacon.delete  | Property Zone Create Import - Not mandatory. It should be assigned only by request (e.g if there is a need of a large number of zone imports) |
+| Client Read Only (for client CS teams) | property:x.alert.view<br>property:x.view.basic ||
+| Client Site Tech (for tech admins who will create and update beacons) | property:x.view.basic<br>property:x.view.update.address<br>property:x.beacon.create.api<br>property:x.beacon.update.floorplan<br>property:x.beacon.update.rssi<br>property:x.beacon.delete<br>property:x.alert.view<br>property:x.alert.create ||
+| GeoComply RO (for GC CS) | system.properties.view<br>system.token.view<br>system.client.view<br>system.access.user.view<br>system.access.role.view<br>system.beaconlog.view<br>system.auditlog.view<br>system.internaldocs.view <img width=400/> ||</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/password-reset.png" width="600" align="middle">
+</p>
+<p>To simplify understanding of permissions and roles the following view can be used under the &quot;System Permissions&quot; or &quot;Property Permissions&quot; items:</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/permission-tree.png" width="600" align="middle">
+<br>
+<img src="./docs-img/internal/im/permission-tree2.png" width="600" align="middle">
+</p>
+<p>To make the Permission Tree the most accessible and to improve offline readability, a detailed Export feature can help ( the Exported file will be in a .csv format):</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/permission-export.png" width="600" align="middle">
+</p>
+<p><a name="back-office"></a>
+##Back Office</p>
+<p>###Operators Management</p>
+<p>The following settings in Back Office - Operators Management &gt; Indoor need to be set before the Beacons can be setup in Beacon Manager:</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/operators-management.png" width="600" align="middle">
+</p>
+<p>###Device Settings</p>
+<blockquote class="warning">
+<p>This functionality will be deprecated in BM 1.9. Negative beacons will be managed in BM.</p>
+</blockquote>
+<p>Every Negative Beacon needs to be added as an ‘Exclusion’ in Back Office - Device Settings for GeoComply to fail patrons when in the Negative Beacon range.</p>
+<p style="text-align:center;">
+<img src="./docs-img/internal/im/negative-beacon.png" width="600" align="middle">
+</p>
+<p>##Internal Contacts</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sam Basile</td>
+<td>sam@geocomply.com</td>
+<td>General Manager, PinPoint [LV]</td>
+</tr>
+<tr>
+<td>Thomas Dinh</td>
+<td>thomas@geoguard.com</td>
+<td>Head of Development (All products)</td>
+</tr>
+<tr>
+<td>Oliver Sainsbury</td>
+<td>oliver@geocomply.com</td>
+<td>Head of Service Delivery (All products)</td>
+</tr>
+<tr>
+<td>Rai McKenzie</td>
+<td>rai@geoguard.com</td>
+<td>PinPoint Technical Product Coordinator</td>
+</tr>
+<tr>
+<td>Kenny Ho</td>
+<td>kenny@geoguard.com</td>
+<td>PinPoint Development Lead [VN]</td>
+</tr>
+<tr>
+<td>Vadym Ustinov</td>
+<td>vadym@geoguard.com</td>
+<td>Primary Infrastructure Contact [UA]</td>
+</tr>
+<tr>
+<td>Victor Shvets</td>
+<td>victor@geocomply.com</td>
+<td>Technical Support Engineer - PinPoint [VA]</td>
+</tr>
+</tbody>
+</table>
+<p>###Slack Channels</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#pinpoint</td>
+<td>High level PinPoint discussion and updates. Targeted at business &amp; regulatory related discussion.</td>
+</tr>
+<tr>
+<td>#pinpoint_vn</td>
+<td>Vietnam development &amp; QA technical discussions.</td>
+</tr>
+<tr>
+<td>#pinpoint_infras</td>
+<td>Infrastructure and deployment discussions &amp; notifications. Use #gc_infra_support for urgent needs.</td>
+</tr>
+<tr>
+<td>#pinpoint_dev</td>
+<td>Development notifications. Not generally used.</td>
+</tr>
+<tr>
+<td>#pinpoint_intralot</td>
+<td>Discussions specifically pertaining to customer, Intralot.</td>
+</tr>
+<tr>
+<td>#pinpoint_dk_ia</td>
+<td>Discussions specifically pertaining to customer, DraftKings in Iowa.</td>
+</tr>
+</tbody>
+</table>
+
+<div style="page-break-after:always">&nbsp;</div> 
+</body>
+</html>
